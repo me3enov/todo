@@ -1,0 +1,108 @@
+{
+  "purchases": {
+    "id": "000000",
+    "name": "Purchases",
+    "color": "green",
+    "tasks": {
+      "Pasta": {
+        "id": "000000",
+        "name": "Pasta",
+        "disabled" : false,
+        "checked" : false
+      },
+      "Potatoes": {
+        "id": "000001",
+        "name": "Potatoes",
+        "disabled" : false,
+        "checked" : false
+      },
+      "Bitcoins": {
+        "id": "000002",
+        "name": "Bitcoins",
+        "disabled" : false,
+        "checked" : false
+      }
+    }
+  },
+  "Frontend": {
+    "id": "000001",
+    "name": "Frontend",
+    "color": "blue",
+    "tasks": {
+      "Learn JavaScript": {
+        "id": "000000",
+        "name": "Learn JavaScript",
+        "disabled" : false,
+        "checked" : false
+      },
+      "Explore Design Patterns": {
+        "id": "000001",
+        "name": "Explore Design Patterns",
+        "disabled" : false,
+        "checked" : false
+      },
+      "ReactJS Hooks (useState, useReducer, useEffect etc": {
+        "id": "000002",
+        "name": "ReactJS Hooks (useState, useReducer, useEffect etc",
+        "disabled" : false,
+        "checked" : false
+      },
+      "Redux (redux-observable, redux-saga)": {
+        "id": "000003",
+        "name": "Redux (redux-observable, redux-saga)",
+        "disabled" : false,
+        "checked" : false
+      }
+    }
+  },
+  "Films and TV series": {
+    "id": "000002",
+    "name": "Films and TV series",
+    "color": "pink",
+    "tasks": {
+      "The Lord of the Rings: The Rings of Power": {
+        "id": "000000",
+        "name": "The Lord of the Rings: The Rings of Power",
+        "disabled" : false,
+        "checked" : false
+      },
+      "House of the Dragon": {
+        "id": "000001",
+        "name": "House of the Dragon",
+        "disabled" : false,
+        "checked" : false
+      },
+      "Elvis": {
+        "id": "000002",
+        "name": "Elvis",
+        "disabled" : false,
+        "checked" : false
+      }
+    }
+  },
+  "Books": {
+    "id": "000003",
+    "name": "Books",
+    "color": "lightGreen",
+    "tasks": {
+      "Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People": {
+        "id": "000000",
+        "name": "Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People",
+        "disabled" : false,
+        "checked" : false
+      },
+      "Powerful: Building a Culture of Freedom and Responsibility": {
+        "id": "000001",
+        "name": "Powerful: Building a Culture of Freedom and Responsibility",
+        "disabled" : false,
+        "checked" : false
+      }
+    }
+  },
+  "Private": {
+    "id": "000004",
+    "name": "Private",
+    "color": "gray",
+    "tasks": ""
+  }
+}
