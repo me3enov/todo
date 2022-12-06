@@ -9,9 +9,8 @@ class Api {
   // get tasks
   getData() {
     return fetch(`${this.URL}${this.TASKS}`, {
-      headers: this.HEADERS,
-    })
-      .then(this.checkServerResponse);
+      headers: this.HEADERS
+    }).then(this.checkServerResponse);
   }
 
   // check response from server
@@ -26,11 +25,11 @@ class Api {
 const api = new Api({
   HEADERS: {
     'Content-Type': 'application/json',
-    "'Accept'": 'application/json',
+    "'Accept'": 'application/json'
   },
   URL: '',
   TASKS: 'json/allData.json',
-  ERROR_TEXT: 'ERROR: ',
+  ERROR_TEXT: 'ERROR: '
 });
 
 export default api;

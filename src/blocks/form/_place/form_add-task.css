@@ -1,8 +1,8 @@
-.form_add-task{
+.form_add-task {
   visibility: visible;
   opacity: 1;
-  -webkit-transition: .4s;
-  -o-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
   margin-top: -19px;
 }

@@ -1,6 +1,6 @@
 function ButtonRemoveTask({ task, onButtonClick }) {
   function handleClick() {
-    onButtonClick(task)
+    onButtonClick(task);
   }
 
   return (
@@ -9,8 +9,7 @@ function ButtonRemoveTask({ task, onButtonClick }) {
       type="button"
       aria-label="Remove task"
       onClick={handleClick}
-    >
-    </button>
+    />
   );
 }
 

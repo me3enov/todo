@@ -1,34 +1,34 @@
 function getColorClass(string) {
   let color = string;
   switch (color) {
-    case "gray":
-      color = "rubric__title_gray";
+    case 'gray':
+      color = 'rubric__title_gray';
       break;
-    case "green":
-      color = "rubric__title_green";
+    case 'green':
+      color = 'rubric__title_green';
       break;
-    case "blue":
-      color = "rubric__title_blue";
+    case 'blue':
+      color = 'rubric__title_blue';
       break;
-    case "pink":
-      color = "rubric__title_pink";
+    case 'pink':
+      color = 'rubric__title_pink';
       break;
-    case "lightGreen":
-      color = "rubric__title_lightGreen";
+    case 'lightGreen':
+      color = 'rubric__title_lightGreen';
       break;
     case 'fuchsia':
-      color = "rubric__title_fuchsia";
+      color = 'rubric__title_fuchsia';
       break;
     case 'black':
-      color = "rubric__title_black";
+      color = 'rubric__title_black';
       break;
     case 'coral':
-      color = "rubric__title_coral";
+      color = 'rubric__title_coral';
       break;
     default:
-      color = "rubric__title_gray";
-    }
+      color = 'rubric__title_gray';
+  }
   return color;
-};
+}
 
 export default getColorClass;

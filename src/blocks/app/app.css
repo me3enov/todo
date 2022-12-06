@@ -1,33 +1,33 @@
 :root {
-  --black:          #000;
-  --red:            #FF4646;
-  --green:          #4DD599;
-  --gray:           #F4F6F8;
-  --outline:        rgba(0, 102, 255, .5);
-  --black08:        rgba(0, 0, 0, .8);
+  --black: #000;
+  --red: #ff4646;
+  --green: #4dd599;
+  --gray: #f4f6f8;
+  --outline: rgba(0, 102, 255, 0.5);
+  --black08: rgba(0, 0, 0, 0.8);
 
-  --grayPick:       #C9D1D3;
-  --greenPick:      #42B883;
-  --bluePick:       #64C4ED;
-  --pinkPick:       #FFBBCC;
-  --lightGreenPick: #B6E6BD;
-  --fuchsiaPick:    #C355F5;
-  --blackPick:      #09011A;
-  --coralPick:      #FF6464;
+  --grayPick: #c9d1d3;
+  --greenPick: #42b883;
+  --bluePick: #64c4ed;
+  --pinkPick: #ffbbcc;
+  --lightGreenPick: #b6e6bd;
+  --fuchsiaPick: #c355f5;
+  --blackPick: #09011a;
+  --coralPick: #ff6464;
 
   --whiteLightness: 100%;
-  --white:          hsl(0, 0%, var(--whiteLightness));
-  --grayF1:         hsl(0, 0%, calc(var(--whiteLightness) - 5%));
-  --grayEF:         hsl(0, 0%, calc(var(--whiteLightness) - 6%));
-  --grayE8:         hsl(0, 0%, calc(var(--whiteLightness) - 9%));
-  --grayE5:         hsl(0, 0%, calc(var(--whiteLightness) - 10%));
-  --grayC7:         hsl(0, 0%, calc(var(--whiteLightness) - 22%));
-  --grayB6:         hsl(0, 0%, calc(var(--whiteLightness) - 29.4%));
-  --gray9C:         hsl(0, 0%, calc(var(--whiteLightness) - 38.8%));
-  --gray46:         hsl(0, 0%, calc(var(--whiteLightness) - 54%));
-  --gray48:         hsl(0, 0%, calc(var(--whiteLightness) - 58.8%));
-  --gray5C:         hsl(0, 0%, calc(var(--whiteLightness) - 64%));
-  --gray52:         hsl(0, 0%, calc(var(--whiteLightness) - 68%));
+  --white: hsl(0, 0%, var(--whiteLightness));
+  --grayF1: hsl(0, 0%, calc(var(--whiteLightness) - 5%));
+  --grayEF: hsl(0, 0%, calc(var(--whiteLightness) - 6%));
+  --grayE8: hsl(0, 0%, calc(var(--whiteLightness) - 9%));
+  --grayE5: hsl(0, 0%, calc(var(--whiteLightness) - 10%));
+  --grayC7: hsl(0, 0%, calc(var(--whiteLightness) - 22%));
+  --grayB6: hsl(0, 0%, calc(var(--whiteLightness) - 29.4%));
+  --gray9C: hsl(0, 0%, calc(var(--whiteLightness) - 38.8%));
+  --gray46: hsl(0, 0%, calc(var(--whiteLightness) - 54%));
+  --gray48: hsl(0, 0%, calc(var(--whiteLightness) - 58.8%));
+  --gray5C: hsl(0, 0%, calc(var(--whiteLightness) - 64%));
+  --gray52: hsl(0, 0%, calc(var(--whiteLightness) - 68%));
 }
 
 .app {
@@ -68,9 +68,9 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  -ms-font-feature-settings: "kern" 1;
-  -webkit-font-feature-settings: "kern";
-  font-feature-settings: "kern";
+  -ms-font-feature-settings: 'kern' 1;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
   font-size: 16px;
   line-height: 19px;
 }
@@ -90,12 +90,13 @@ button {
   border: 0;
   background: transparent;
   cursor: pointer;
-}.example {
+}
+.example {
   display: -ms-grid;
   display: grid;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

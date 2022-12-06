@@ -1,4 +1,4 @@
-.rubric__button-text{
+.rubric__button-text {
   font-style: normal;
   letter-spacing: 1px;
   font-size: 16px;
@@ -11,7 +11,7 @@
   text-overflow: ellipsis;
   margin: 0 0 0 33px;
   padding: 0;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }

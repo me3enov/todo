@@ -1,18 +1,12 @@
-import Checkbox from "./Checkbox";
-import ButtonRemoveTask from "./ButtonRemoveTask";
+import Checkbox from './Checkbox';
+import ButtonRemoveTask from './ButtonRemoveTask';
 
 function ItemOfTask({ item, onRemoveTaskClick }) {
   return (
     <li className="task">
-      <Checkbox
-        item={item}
-      />
+      <Checkbox item={item} />
       <p className="task__text">{item.name}</p>
-      {!item.disabled ?
-        <ButtonRemoveTask
-          task={item}
-          onButtonClick={onRemoveTaskClick}
-        /> : ''}
+      {!item.disabled ? <ButtonRemoveTask task={item} onButtonClick={onRemoveTaskClick} /> : ''}
     </li>
   );
 }

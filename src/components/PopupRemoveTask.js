@@ -1,7 +1,6 @@
-import PopupWithForm from "./PopupWithForm";
+import PopupWithForm from './PopupWithForm';
 
 function PopupRemoveTask({ task, isOpen, onClose, handleRemoveTask }) {
-
   function handleSubmit(evt) {
     evt.preventDefault();
     handleRemoveTask(task);
@@ -19,10 +18,10 @@ function PopupRemoveTask({ task, isOpen, onClose, handleRemoveTask }) {
       onSubmit={handleSubmit}
     >
       <div className="form__title-container">
-        <h3 className='form__title'>{`Do you want to remove "${task?.name}"?`}</h3>
+        <h3 className="form__title">{`Do you want to remove "${task?.name}"?`}</h3>
       </div>
     </PopupWithForm>
-  )
+  );
 }
 
 export default PopupRemoveTask;

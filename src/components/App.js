@@ -14,38 +14,39 @@ function App() {
       setTasks(items);
     }, [setTasks]);
     return tasks;
-  };
+  }
 
   function handleRemoveTask(task) {
-    setTasks(tasks.filter(item => item.id !== task.id));
-  };
-
-  function handleAddTask(task) {
-    setTasks([task, ...tasks]);
-    closeAllPopups();
-  };
+    setTasks(tasks.filter((item) => item.id !== task.id));
+  }
 
   function handleRemoveTaskClick(task) {
     setSelectedTask(task);
     setIsRemoveTaskPopupOpen(true);
-  };
+  }
 
   function closeAllPopups() {
     setIsRemoveTaskPopupOpen(false);
-    setSelectedTask(null)
+    setSelectedTask(null);
+  }
+
+  function handleAddTask(task) {
+    setTasks([task, ...tasks]);
+    closeAllPopups();
   }
 
   useEffect(() => {
-    api.getData()
+    api
+      .getData()
       .then((res) => {
         const items = Object.values(res);
-        //setRubrics(items);
+        // setRubrics(items);
         // For Frontend ONLY hardcode;
-        const frontend = items.filter(item => item.name === 'Frontend')
+        const frontend = items.filter((item) => item.name === 'Frontend');
         setRubrics(frontend);
       })
       .catch((err) => console.log(err));
-    }, []);
+  }, []);
 
   return (
     <div className="app">

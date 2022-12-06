@@ -1,4 +1,4 @@
-.form__buttons-container{
+.form__buttons-container {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-min-content));

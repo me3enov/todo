@@ -6,7 +6,7 @@ function Checkbox({ item }) {
   const handleChange = () => {
     setChecked(!checked);
     item.checked = !item.checked;
-  }
+  };
 
   function handleKeyToggle(evt) {
     if (evt.code === 'Space' || evt.code === 'Enter') {
@@ -24,11 +24,7 @@ function Checkbox({ item }) {
         onChange={handleChange}
         tabIndex={-1}
       />
-      <span
-        className="task__checkmark"
-        onKeyPress={handleKeyToggle}
-        tabIndex={0}>
-      </span>
+      <span className="task__checkmark" onKeyPress={handleKeyToggle} tabIndex={0} />
     </label>
   );
 }

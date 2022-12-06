@@ -15,15 +15,15 @@
   border-radius: 50%;
   border: 2px solid var(--grayE8);
   cursor: pointer;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .task__checkmark:hover,
-.task__checkmark:focus{
+.task__checkmark:focus {
   background-color: var(--grayF1);
-  background-image: url("../../../assets/images/icons/checkbox-hovered.svg");
+  background-image: url('../../../assets/images/icons/checkbox-hovered.svg');
   border: none;
 }
 
@@ -31,12 +31,12 @@
   outline: 2px solid var(--outline);
 }
 
-.task__input:disabled ~ .task__checkmark{
+.task__input:disabled ~ .task__checkmark {
   background-color: var(--grayF1);
 }
 
 .task__input:disabled ~ .task__checkmark:hover,
-.task__input:disabled ~ .task__checkmark:focus{
+.task__input:disabled ~ .task__checkmark:focus {
   background-color: var(--grayE8);
   background-image: none;
   cursor: not-allowed;
@@ -44,7 +44,7 @@
 
 .task__input:checked ~ .task__checkmark {
   background-color: var(--green);
-  background-image: url("../../../assets/images/icons/checkbox-checked.svg");
+  background-image: url('../../../assets/images/icons/checkbox-checked.svg');
   border: none;
 }
 
