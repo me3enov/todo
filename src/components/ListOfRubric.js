@@ -15,6 +15,20 @@ function ListOfRubric({ rubrics, onRemoveTaskClick, useUpdateTasks, handleAddTas
           />
         );
       })}
+    {/*
+           {rubrics.map(({ id, tasks }) => {
+        const {id} = rubric;
+          return (
+            <ItemOfRubric
+              key={id}
+              tasks={tasks}x
+              onRemoveTaskClick={onRemoveTaskClick}
+              useUpdateTasks={useUpdateTasks}
+              handleAddTask={handleAddTask}
+            />
+        );
+      })}
+      */}
     </ul>
   );
 }

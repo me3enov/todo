@@ -1,6 +1,6 @@
 import Checkbox from './Checkbox';
 import ButtonRemoveTask from './ButtonRemoveTask';
-
+//Незачем передавать весь объект таски. Тебе здесь нужен только флаг checked
 function ItemOfTask({ item, onRemoveTaskClick }) {
   return (
     <li className="task">

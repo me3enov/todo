@@ -1,6 +1,10 @@
 import PopupWithForm from './PopupWithForm';
 
 function PopupRemoveTask({ task, isOpen, onClose, handleRemoveTask }) {
+  /**
+   * 1)Просто для информации - многие разработчики не приветствуют сокращение названий. Нет никаких мировых требований. Это всегда решается на уровне команды.
+   * 2)Подумай над целесообразностью создавать сабмит тут, а не на уровень выше
+   *   */
   function handleSubmit(evt) {
     evt.preventDefault();
     handleRemoveTask(task);
