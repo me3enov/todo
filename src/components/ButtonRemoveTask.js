@@ -1,3 +1,4 @@
+//Сюда следует передавать уже готовый хэндлер, созданный выше
 function ButtonRemoveTask({ task, onButtonClick }) {
   function handleClick() {
     onButtonClick(task);

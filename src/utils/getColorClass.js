@@ -32,3 +32,27 @@ function getColorClass(string) {
 }
 
 export default getColorClass;
+
+
+// function getColorClass(color) {
+//   switch (color) {
+//     case "gray":
+//       return "rubric__title_gray";
+//     case "green":
+//       return "rubric__title_green";
+//     case "blue":
+//       return "rubric__title_blue";
+//     case "pink":
+//       return "rubric__title_pink";
+//     case "lightGreen":
+//       return "rubric__title_lightGreen";
+//     case 'fuchsia':
+//       return "rubric__title_fuchsia";
+//     case 'black':
+//       return "rubric__title_black";
+//     case 'coral':
+//       return "rubric__title_coral";
+//     default:
+//       return "rubric__title_gray";
+//   }
+// };

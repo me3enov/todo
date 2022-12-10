@@ -22,6 +22,7 @@ function PopupAddTask({ isOpen, handleAddTask, handleTogglePopupOpen }) {
     handleTogglePopupOpen();
   }
 
+
   return (
     <form
       id="form_add-task"
@@ -31,6 +32,7 @@ function PopupAddTask({ isOpen, handleAddTask, handleTogglePopupOpen }) {
       onSubmit={handleSubmit}
     >
       <fieldset className="form__input-container">
+        {/* Почему решил инпут сделать контроллируемым? Подумай, пожалуйста, что лучше здесь подойдет: контроллируемый или неконтоллируемый инпут */}
         <input
           id="form__input_task-name"
           className="form__input form__input_task-name"

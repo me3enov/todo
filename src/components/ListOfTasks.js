@@ -10,6 +10,8 @@ function ListTask({ tasksList, onRemoveTaskClick, useUpdateTasks }) {
       {tasks.map((task) => {
         task.id = nanoid(10);
         return <ItemOfTask key={task.id} item={task} onRemoveTaskClick={onRemoveTaskClick} />;
+          // onRemoveTaskClick={() => onRemoveTaskClick(task.id)}
+          // и тебе не придется дальше создавать хэнддеры дополнительные. На каждый айтем навесится onRemoveTaskClick с нужным id
       })}
     </ul>
   );

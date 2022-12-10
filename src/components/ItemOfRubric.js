@@ -2,7 +2,7 @@ import Header from './Header';
 import ListOfTasks from './ListOfTasks';
 import getColorClass from '../utils/getColorClass';
 import ContainerAddTask from './ContainerAddTask';
-
+//Тут тоже нет смысла передавать весь item, если дальше используются только tasks
 function ItemOfRubric({ item, onRemoveTaskClick, useUpdateTasks, handleAddTask }) {
   const color = getColorClass(item.color);
 
