@@ -7,7 +7,7 @@ import classNames from 'classnames/bind';
 import styles from './board.css';
 const cx = classNames.bind(styles);
 
-export const Board = ({ board }) => {
+export const Board = ({ boardId, board }) => {
   const [tasks, setTasks] = useState(board.items);
 
   const className = cx({
@@ -15,10 +15,10 @@ export const Board = ({ board }) => {
   });
 
   return (
-    <div className={className} aria-label={board.name}>
+    <li className={className} aria-label={board.name}>
       <HeaderOfBoard color={board.title.color} isTitleForHeader={board.title.text} />
-      <ListOfTasks tasks={tasks} onSetTasks={setTasks} />
+      <ListOfTasks boardId={boardId} tasks={tasks} onSetTasks={setTasks} />
       <ContainerAddTask tasks={tasks} onSetTasks={setTasks} />
-    </div>
+    </li>
   );
 };

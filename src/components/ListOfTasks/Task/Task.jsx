@@ -1,3 +1,5 @@
+import { Draggable } from 'react-beautiful-dnd';
+
 import { useState } from 'react';
 import { Checkbox } from './Checkbox';
 import { TaskText } from './TaskText';
@@ -8,7 +10,7 @@ import classNames from 'classnames/bind';
 import styles from './task.css';
 const cx = classNames.bind(styles);
 
-export const Task = ({ task, tasks, onSetTasks }) => {
+export const Task = ({ index, task, tasks, onSetTasks }) => {
   const [isOpenPopup, setIsOpenPopup] = useState(false);
   const [isChecked, setIsChecked] = useState(task.checked);
 
@@ -37,24 +39,34 @@ export const Task = ({ task, tasks, onSetTasks }) => {
   };
 
   return (
-    <li className={className} aria-label={task}>
-      <Checkbox
-        isLabelForCheckbox={`Check ${task.text}`}
-        isChecked={isChecked}
-        onChangeCheckbox={handleChangeCheckbox}
-        onKeyDownCheckbox={handleKeyDown}
-      />
-      <TaskText isNameOfTask={task.text} />
-      <ButtonRemoveTask onOpenPopup={handleOpenPopup} />
-      {isOpenPopup ? (
-        <PopupRemoveTask
-          task={task}
-          tasks={tasks}
-          isOpenPopup={isOpenPopup}
-          onClosePopup={handleClosePopup}
-          onSetTasks={onSetTasks}
-        />
-      ) : null}
-    </li>
+    <Draggable key={task.id} draggableId={task.id} index={index}>
+      {(provided, snapshot) => {
+        return (
+          <li
+            className={className}
+            ref={provided.innerRef}
+            {...provided.draggableProps}
+            {...provided.dragHandleProps}>
+            <Checkbox
+              isLabelForCheckbox={`Check ${task.text}`}
+              isChecked={isChecked}
+              onChangeCheckbox={handleChangeCheckbox}
+              onKeyDownCheckbox={handleKeyDown}
+            />
+            <TaskText isNameOfTask={task.text} />
+            <ButtonRemoveTask onOpenPopup={handleOpenPopup} />
+            {isOpenPopup ? (
+              <PopupRemoveTask
+                task={task}
+                tasks={tasks}
+                isOpenPopup={isOpenPopup}
+                onClosePopup={handleClosePopup}
+                onSetTasks={onSetTasks}
+              />
+            ) : null}
+          </li>
+        );
+      }}
+    </Draggable>
   );
 };

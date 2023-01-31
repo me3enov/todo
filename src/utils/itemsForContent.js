@@ -1,99 +1,99 @@
-import { nanoid } from 'nanoid';
+import uuid from 'uuid/v4';
 
 export const itemsForContent = {
-  [nanoid(10)]: {
+  [uuid()]: {
     title: {
       text: 'Purchases',
       color: 'green'
     },
     items: [
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'Pasta',
         checked: false
       },
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'Potatoes',
         checked: false
       },
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'Bitcoins',
         checked: false
       }
     ]
   },
-  [nanoid(10)]: {
+  [uuid()]: {
     title: {
       text: 'Frontend',
       color: 'blue'
     },
     items: [
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'Learn JavaScript',
         checked: false
       },
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'Explore Design Patterns',
         checked: false
       },
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'ReactJS Hooks (useState, useReducer, useEffect etc',
         checked: false
       },
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'Redux (redux-observable, redux-saga)',
         checked: false
       }
     ]
   },
-  [nanoid(10)]: {
+  [uuid()]: {
     title: {
       text: 'Films and TV series',
       color: 'pink'
     },
     items: [
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'The Lord of the Rings: The Rings of Power',
         checked: false
       },
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'House of the Dragon',
         checked: false
       },
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'Elvis',
         checked: false
       }
     ]
   },
-  [nanoid(10)]: {
+  [uuid()]: {
     title: {
       text: 'Books',
       color: 'lightGreen'
     },
     items: [
       {
-        id: nanoid(10),
+        id: uuid(),
         text: 'Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People',
         checked: false
       },
       {
-        id: '2',
+        id: uuid(),
         text: 'Powerful: Building a Culture of Freedom and Responsibility',
         checked: false
       }
     ]
   },
-  [nanoid(10)]: {
+  [uuid()]: {
     title: {
       text: 'Private',
       color: 'gray'

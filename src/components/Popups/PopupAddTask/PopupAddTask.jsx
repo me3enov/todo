@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form';
-import { nanoid } from 'nanoid';
+import uuid from 'uuid/v4';
+
 import { Form } from '../../Form';
 import { ErrorOfForm } from '../../Form/ErrorOfForm';
 import { ButtonsContainer } from '../../Form/ButtonsContainer';
@@ -31,7 +32,7 @@ export const PopupAddTask = ({ isOpenPopup, onAddTask, onClosePopup }) => {
 
   const onSubmit = (data) => {
     onAddTask({
-      id: nanoid(10),
+      id: uuid(),
       text: data?.task || 'Untitled',
       disabled: false,
       checked: false
