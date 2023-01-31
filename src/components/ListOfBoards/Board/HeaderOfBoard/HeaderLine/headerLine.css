@@ -1,0 +1,6 @@
+.headerLine {
+  height: 1px;
+  width: 100%;
+  background-color: var(--grayF1);
+  margin: 20px 0 21px;
+}

@@ -5,6 +5,7 @@ env:
   jest: true
 extends:
   - plugin:react/recommended
+  - plugin:react-hooks/recommended
   - plugin:prettier/recommended
 overrides: []
 parserOptions:

@@ -1,0 +1,12 @@
+.popupAddTask {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.popupAddTaskDisabled {
+  visibility: hidden;
+  opacity: 0;
+}

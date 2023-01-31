@@ -1,0 +1,46 @@
+.buttonAddTask {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 19px;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  margin: 0 0 0 2px;
+}
+
+.buttonAddTask:after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  background-image: url('/public/assets/images/icons/plus-task.svg');
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.buttonAddTask:hover:after,
+.buttonAddTask:focus:after {
+  background-image: url('/public/assets/images/icons/plus-task-hovered.svg');
+}
+
+.buttonAddTask:hover > .rubric__button-text,
+.buttonAddTask:focus > .rubric__button-text {
+  color: var(--black08);
+}
+
+.buttonAddTask:focus {
+  outline: 2px solid var(--outline);
+}
+
+.buttonAddTask:active {
+  outline: none;
+}

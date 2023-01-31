@@ -5,61 +5,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
-/* app */
-@import url(blocks/app/app.css);
+/* root */
+:root {
+  --black: #000;
+  --red: #ff4646;
+  --green: #4dd599;
+  --gray: #f4f6f8;
+  --outline: rgba(0, 102, 255, 0.5);
+  --black08: rgba(0, 0, 0, 0.8);
 
-/* content */
-@import url(blocks/content/content.css);
+  --grayPick: #c9d1d3;
+  --greenPick: #42b883;
+  --bluePick: #64c4ed;
+  --pinkPick: #ffbbcc;
+  --lightGreenPick: #b6e6bd;
+  --fuchsiaPick: #c355f5;
+  --blackPick: #09011a;
+  --coralPick: #ff6464;
 
-/* rubric container */
-@import url(blocks/items-list/items-list.css);
+  --whiteLightness: 100%;
+  --white: hsl(0, 0%, var(--whiteLightness));
+  --grayF1: hsl(0, 0%, calc(var(--whiteLightness) - 5%));
+  --grayEF: hsl(0, 0%, calc(var(--whiteLightness) - 6%));
+  --grayE8: hsl(0, 0%, calc(var(--whiteLightness) - 9%));
+  --grayE5: hsl(0, 0%, calc(var(--whiteLightness) - 10%));
+  --grayC7: hsl(0, 0%, calc(var(--whiteLightness) - 22%));
+  --grayB6: hsl(0, 0%, calc(var(--whiteLightness) - 29.4%));
+  --gray9C: hsl(0, 0%, calc(var(--whiteLightness) - 38.8%));
+  --gray46: hsl(0, 0%, calc(var(--whiteLightness) - 54%));
+  --gray48: hsl(0, 0%, calc(var(--whiteLightness) - 58.8%));
+  --gray5C: hsl(0, 0%, calc(var(--whiteLightness) - 64%));
+  --gray52: hsl(0, 0%, calc(var(--whiteLightness) - 68%));
+}
 
-/* rubric */
-@import url(blocks/rubric/rubric.css);
-@import url(blocks/items-list/_place/items-list_rubrics.css);
-/* rubric line */
-@import url(blocks/rubric/__line/rubric__line.css);
-/* rubric title */
-@import url(blocks/rubric/__title/rubric__title.css);
-@import url(blocks/rubric/__title/_color/rubric__title_black.css);
-@import url(blocks/rubric/__title/_color/rubric__title_blue.css);
-@import url(blocks/rubric/__title/_color/rubric__title_coral.css);
-@import url(blocks/rubric/__title/_color/rubric__title_fuchsia.css);
-@import url(blocks/rubric/__title/_color/rubric__title_gray.css);
-@import url(blocks/rubric/__title/_color/rubric__title_green.css);
-@import url(blocks/rubric/__title/_color/rubric__title_lightGreen.css);
-@import url(blocks/rubric/__title/_color/rubric__title_pink.css);
-/* rubric button */
-@import url(blocks/rubric/__button/rubric__button-add-task.css);
-@import url(blocks/rubric/__button/_disabled/rubric__button_disabled.css);
-@import url(blocks/rubric/__button-text/rubric__button-text.css);
+/* body */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--white);
+}
 
-/* tasks list */
-@import url(blocks/tasks-list/tasks-list.css);
+/* document */
+* {
+  color: var(--black);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-font-feature-settings: 'kern' 1;
+  -webkit-font-feature-settings: 'kern';
+  font-feature-settings: 'kern';
+  font-size: 16px;
+  line-height: 19px;
+}
 
-/* task */
-@import url(blocks/task/task.css);
-@import url(blocks/task/__text/task__text.css);
-@import url(blocks/task/__checkmark/task__checkmark.css);
-@import url(blocks/task/__container/task__checkbox-container.css);
-@import url(blocks/task/__input/input__input.css);
-@import url(blocks/task/__remove-button/task__remove-button.css);
+/* list */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-/* popup */
-@import url(blocks/popup/popup.css);
-@import url(blocks/popup/_opened/popup_opened.css);
-@import url(blocks/popup/__container/popup__container.css);
-@import url(blocks/popup/__close-button/popup__close-button.css);
+/* link */
+a {
+  text-decoration: none;
+}
 
-/* form */
-@import url(blocks/form/form.css);
-@import url(blocks/form/_place/form_add-task.css);
-@import url(blocks/form/_disabled/form_disabled.css);
-@import url(blocks/form/__title-container/form__title-container.css);
-@import url(blocks/form/__title/form__title.css);
-@import url(blocks/form/__input/form__input.css);
-@import url(blocks/form/__input-container/form__input-container.css);
-@import url(blocks/form/__buttons-container/form__buttons-container.css);
-@import url(blocks/form/__button/form__button.css);
-@import url(blocks/form/__button/_place/form__button_submit.css);
-@import url(blocks/form/__button/_place/form__button_remove.css);
+/* button */
+button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* example */
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}

@@ -1,0 +1,25 @@
+.checkboxInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkboxInput:disabled ~ .checkboxSpan:hover,
+.checkboxInput:disabled ~ .checkboxSpan:focus {
+  background-color: var(--grayE8);
+  background-image: none;
+  outline: none;
+  cursor: not-allowed;
+}
+
+.checkboxInput:checked ~ .checkboxSpan {
+  background-color: var(--green);
+  background-image: url('/public/assets/images/icons/checkbox-checked.svg');
+  border: none;
+}
+
+.checkboxInput:active ~ .checkboxSpan {
+  outline: none;
+}

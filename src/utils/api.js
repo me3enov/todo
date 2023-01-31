@@ -28,7 +28,7 @@ const api = new Api({
     "'Accept'": 'application/json'
   },
   URL: '',
-  TASKS: 'json/allData.json',
+  TASKS: 'assets/data/allData.json',
   ERROR_TEXT: 'ERROR: '
 });
 
