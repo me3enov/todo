@@ -1,5 +1,5 @@
 import { Content } from '../Content';
-import { itemsForContent } from '../../utils/itemsForContent';
+import { itemsForContent } from '../../data/itemsForContent';
 
 import classNames from 'classnames/bind';
 import styles from './app.css';

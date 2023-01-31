@@ -13,6 +13,7 @@ export const Content = ({ itemsForContent }) => {
   const className = cx({
     content: true
   });
+  //пробовал запилить DnD по примеру, но что-то пошло не так=(
 
   const onDragEnd = (result, columns, setColumns) => {
     if (!result.destination) return;
