@@ -27,6 +27,7 @@ export const Task = ({ index, task, tasks, onSetTasks }) => {
   };
 
   const handleChangeCheckbox = () => {
+    //TODO: зачем строчка ниже? вроде без нее работает, но даже если нет, так не делается 100%
     task.checked = !task.checked;
     setIsChecked(!isChecked);
   };
@@ -55,6 +56,7 @@ export const Task = ({ index, task, tasks, onSetTasks }) => {
             />
             <TaskText isNameOfTask={task.text} />
             <ButtonRemoveTask onOpenPopup={handleOpenPopup} />
+            {/* TODO: { isOpenPopup && <PopupRemoveTask ... /> } */}
             {isOpenPopup ? (
               <PopupRemoveTask
                 task={task}

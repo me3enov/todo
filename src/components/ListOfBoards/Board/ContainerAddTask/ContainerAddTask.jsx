@@ -26,17 +26,31 @@ export const ContainerAddTask = ({ tasks, onSetTasks }) => {
     setIsOpenPopup(false);
   };
 
-  const buttonAddTask = () => <ButtonAddTask onOpenPopupAddTask={handleOpenPopupAddTask} />;
+  // const buttonAddTask = () => <ButtonAddTask onOpenPopupAddTask={handleOpenPopupAddTask} />;
+  //
+  // const popupAddTask = () => {
+  //   return (
+  //     <PopupAddTask
+  //       isOpenPopup={isOpenPopup}
+  //       onAddTask={handleAddTask}
+  //       onClosePopup={handleClosePopupAddTask}
+  //     />
+  //   );
+  // };
+  //TODO: Не понял, зачем было создавать функции и вызывать их
+  // return <div className={className}> {isOpenPopup ? buttonAddTask() : popupAddTask()} </div>;
 
-  const popupAddTask = () => {
-    return (
-      <PopupAddTask
-        isOpenPopup={isOpenPopup}
-        onAddTask={handleAddTask}
-        onClosePopup={handleClosePopupAddTask}
-      />
-    );
-  };
-
-  return <div className={className}> {isOpenPopup ? buttonAddTask() : popupAddTask()} </div>;
+  return (
+    <div className={className}>
+      {isOpenPopup ? (
+        <ButtonAddTask onOpenPopupAddTask={handleOpenPopupAddTask} />
+      ) : (
+        <PopupAddTask
+          isOpenPopup={isOpenPopup}
+          onAddTask={handleAddTask}
+          onClosePopup={handleClosePopupAddTask}
+        />
+      )}
+    </div>
+  );
 };

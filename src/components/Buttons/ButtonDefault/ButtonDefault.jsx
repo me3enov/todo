@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './buttonDefault.css';
 const cx = classNames.bind(styles);
 
+//TODO: isTypeForButton по названию подразумевает boolean значение, но на деле строчка. Аналогично с isLabelForButton
 export const ButtonDefault = ({
   isStyleForButton,
   isTypeForButton,
