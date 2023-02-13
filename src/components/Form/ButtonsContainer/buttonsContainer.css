@@ -1,7 +1,0 @@
-.buttonsContainer {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, -webkit-min-content));
-  grid-template-columns: repeat(auto-fit, minmax(50px, min-content));
-  gap: 9px;
-}

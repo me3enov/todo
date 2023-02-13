@@ -1,7 +1,0 @@
-.listOfBoards {
-  display: flex;
-  width: 420px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}

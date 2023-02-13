@@ -1,0 +1,45 @@
+.headerText {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.black {
+  color: var(--blackPick);
+}
+
+.blue {
+  color: var(--bluePick);
+}
+
+.coral {
+  color: var(--coralPick);
+}
+
+.fuchsia {
+  color: var(--fuchsiaPick);
+}
+
+.gray {
+  color: var(--grayPick);
+}
+
+.green {
+  color: var(--greenPick);
+}
+
+.lightGreen {
+  color: var(--lightGreenPick);
+}
+
+.pink {
+  color: var(--pinkPick);
+}

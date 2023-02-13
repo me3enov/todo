@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# SkillBox. 4.8 Практическая работа
+### Задача:
+Разделить компонент Card.tsx на ряд отдельных компонентов
+расположить отдельные компоненты внутри папки Card
+описать в письменной форме алгоритм которым вы руководствовались при разделении компонента Card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Разделил компонент Card.tsx придерживаясь правилу один компонент - одна ответственность.
 
-## Available Scripts
+### Письменное описание алгоритма:
+> #### 1. Компонент TextContent
+>Отделяем информационный блок карточки в отдельный модуль.
+**TextContent** отлично разделяется на более мелкие компоненты, поскольку содержит в себе различную информацию и цели:<br><br>
+1.2. Компонент **Title** - Отображает заголовок поста.<br>
+1.3. Компонент **UserLink** - Отображает информацию о пользователе.<br>
+1.3.1. Компонент **Avatar** - Отображает аватар пользователя.<br>
+1.3.2. Компонент **Username** - Отображает имя пользователя.<br>
+1.4.1. Компонент **UserLink** - Аватар и имя автора.<br>
+1.5. Компонент **CreatedAt** - Дата создания поста.<br><br>
+Таким образом мы разделили информацию распологаемую в информационном блоке на составляющие.<br>
+Теперь каждый модуль хранит в себе 1 сущность и выполняет 1 цель, что позволяет максимально гибко редактировать информацию хедере.<br><br>
+**На данный момент разделил компонент **UserLink** на **Avatar** и **Username** по нескольким причинам:<br>
+Только **Username** ведет на профиль пользователя являясь ссылкой, аватар же побочная картинка которую, мы можем решить не отображать на маленьком разрешении или не отображать вовсе.*
 
-In the project directory, you can run:
+> #### 2. Компонент Preview
+> Компонент хранит в себе исключительно картинку карточки и определенно является отдельно настраиваемой сущностью поста.
+Выносим в отдельный компонент для лучшего взаимодействия.
 
-### `npm start`
+> #### 3. Компонент Menu
+> Кнопка вызова меню для карточки.<br>
+Составная сущность требующая выноса в отдельный компонент.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> #### 4 Компонент Controls
+> Объединяет в себе сущности “контролеры” обеспечивающие взаимодействие с карточкой.<br>
+Разделил на следующие компоненты в соответствии с их задачами:<br>
+4.1 Компонент **KarmaCounter** - Отображает контролер кармы.<br>
+4.2 Компонент **CommentsButton** - Отображает контролер комментариев.<br>
+4.3 Компонент **ShareButton** - Отображает кнопку “Поделиться”.<br>
+4.3 Компонент **SaveButton** - Отображает кнопку “Сохранить”.<br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> ### Запуск проекта:
+> Используйте команду "make run"<br>
+Откройте http://localhost:3000/
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> ### Команды "make":
+> "make install" - установка проекта.<br>
+"make test" - запуск тестов.<br>
+"make lint" - запуск линтера.<br>
+"make run" - запуск проекта.<br>

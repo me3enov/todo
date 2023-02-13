@@ -1,0 +1,15 @@
+.checkbox {
+  position: relative;
+}
+
+.checkboxInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkboxInput:active ~ .checkboxSpan {
+  outline: none;
+}
