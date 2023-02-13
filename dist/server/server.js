@@ -831,7 +831,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.CheckboxSpan = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar CheckboxSpan = function (props) {\n    return react_1.default.createElement(\"input\", __assign({}, props));\n};\nexports.CheckboxSpan = CheckboxSpan;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Checkbox/CheckboxSpan/CheckboxSpan.tsx?");
+eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.CheckboxSpan = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar CheckboxSpan = function (props) {\n    return react_1.default.createElement(\"span\", __assign({}, props));\n};\nexports.CheckboxSpan = CheckboxSpan;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Checkbox/CheckboxSpan/CheckboxSpan.tsx?");
 
 /***/ }),
 
@@ -854,7 +854,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"checkbox\": \"checkbox__checkbox--3Qqhe\",\n\t\"checkboxInput\": \"checkbox__checkboxInput--2Sm--\",\n\t\"checkboxSpan\": \"checkbox__checkboxSpan--1xhHZ\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Checkbox/checkbox.css?");
+eval("// Exports\nmodule.exports = {\n\t\"checkbox\": \"checkbox__checkbox--3Qqhe\",\n\t\"checkboxInput\": \"checkbox__checkboxInput--2Sm--\",\n\t\"checkboxSpan\": \"checkbox__checkboxSpan--1xhHZ\",\n\t\"checkboxSpan_checked\": \"checkbox__checkboxSpan_checked--2HD7n\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Checkbox/checkbox.css?");
 
 /***/ }),
 

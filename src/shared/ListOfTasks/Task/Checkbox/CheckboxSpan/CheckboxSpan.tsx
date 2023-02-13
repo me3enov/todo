@@ -5,5 +5,5 @@ interface ICheckboxSpanProps extends React.ComponentPropsWithoutRef<'span'> {
 }
 
 export const CheckboxSpan = (props: ICheckboxSpanProps) => {
-  return <input {...props} />;
+  return <span {...props} />;
 };

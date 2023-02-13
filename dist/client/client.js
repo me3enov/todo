@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "2cf6db06316cae6d5392";
+/******/ 	var hotCurrentHash = "2fe58ed0cbc4dc741906";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1135,7 +1135,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".checkbox__checkbox--3Qqhe {\\n  position: relative;\\n}\\n\\n.checkbox__checkboxInput--2Sm-- {\\n  position: absolute;\\n  opacity: 0;\\n  cursor: pointer;\\n  height: 0;\\n  width: 0;\\n}\\n\\n.checkbox__checkboxInput--2Sm--:active ~ .checkbox__checkboxSpan--1xhHZ {\\n  outline: none;\\n}\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"checkbox\": \"checkbox__checkbox--3Qqhe\",\n\t\"checkboxInput\": \"checkbox__checkboxInput--2Sm--\",\n\t\"checkboxSpan\": \"checkbox__checkboxSpan--1xhHZ\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Checkbox/checkbox.css?./node_modules/css-loader/dist/cjs.js??ref--6-1");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../../../assets/images/icons/checkbox-hovered.svg */ \"./src/assets/images/icons/checkbox-hovered.svg\");\nvar ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! ../../../../assets/images/icons/checkbox-checked.svg */ \"./src/assets/images/icons/checkbox-checked.svg\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);\n// Module\nexports.push([module.i, \".checkbox__checkbox--3Qqhe {\\n  position: relative;\\n}\\n\\n.checkbox__checkboxInput--2Sm-- {\\n  position: absolute;\\n  opacity: 0;\\n  cursor: pointer;\\n  height: 0;\\n  width: 0;\\n}\\n\\n.checkbox__checkboxInput--2Sm--:active ~ .checkbox__checkboxSpan--1xhHZ {\\n  outline: none;\\n}\\n\\n.checkbox__checkboxSpan--1xhHZ {\\n  display: -webkit-box;\\n  display: -ms-flexbox;\\n  display: flex;\\n  -ms-flex-negative: 0;\\n  flex-shrink: 0;\\n  height: 20px;\\n  width: 20px;\\n  margin: 0;\\n  padding: 0;\\n  background-color: var(--white);\\n  background-repeat: no-repeat;\\n  background-position: center;\\n  background-size: 10px 8px;\\n  border-radius: 50%;\\n  border: 2px solid var(--grayE8);\\n  cursor: pointer;\\n  -webkit-transition: 0.3s;\\n  -o-transition: 0.3s;\\n  transition: 0.3s;\\n}\\n\\n.checkbox__checkboxSpan--1xhHZ:hover,\\n.checkbox__checkboxSpan--1xhHZ:focus {\\n  background-color: var(--grayF1);\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \");\\n  border: none;\\n}\\n\\n.checkbox__checkboxSpan--1xhHZ:focus {\\n  outline: 2px solid var(--outline);\\n}\\n\\n.checkbox__checkboxSpan_checked--2HD7n {\\n  background-color: var(--green);\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\n  border: none;\\n}\\n\\n.checkbox__checkboxSpan_checked--2HD7n:hover,\\n.checkbox__checkboxSpan_checked--2HD7n:focus {\\n  background-color: var(--green);\\n  background-image: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \");\\n  border: none;\\n}\", \"\"]);\n// Exports\nexports.locals = {\n\t\"checkbox\": \"checkbox__checkbox--3Qqhe\",\n\t\"checkboxInput\": \"checkbox__checkboxInput--2Sm--\",\n\t\"checkboxSpan\": \"checkbox__checkboxSpan--1xhHZ\",\n\t\"checkboxSpan_checked\": \"checkbox__checkboxSpan_checked--2HD7n\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Checkbox/checkbox.css?./node_modules/css-loader/dist/cjs.js??ref--6-1");
 
 /***/ }),
 
@@ -1717,6 +1717,30 @@ eval("\nmodule.exports = function (module) {\n    if (!module.webpackPolyfill) {
 
 "use strict";
 eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.App = exports.AppComponent = void 0;\n__webpack_require__(/*! ./main.global.css */ \"./src/main.global.css\");\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"./node_modules/react-hot-loader/root.js\");\nvar React = __importStar(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar Content_1 = __webpack_require__(/*! ./shared/Content */ \"./src/shared/Content/index.ts\");\nvar itemsForContent_1 = __webpack_require__(/*! ./data/itemsForContent */ \"./src/data/itemsForContent.js\");\nvar AppComponent = function () {\n    return (React.createElement(\"div\", { className: 'app' },\n        React.createElement(Content_1.Content, { itemsForContent: itemsForContent_1.itemsForContent })));\n};\nexports.AppComponent = AppComponent;\nexports.App = root_1.hot(exports.AppComponent);\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
+
+/***/ }),
+
+/***/ "./src/assets/images/icons/checkbox-checked.svg":
+/*!******************************************************!*\
+  !*** ./src/assets/images/icons/checkbox-checked.svg ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"checkbox-checked.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/icons/checkbox-checked.svg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/icons/checkbox-hovered.svg":
+/*!******************************************************!*\
+  !*** ./src/assets/images/icons/checkbox-hovered.svg ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"checkbox-hovered.svg\");\n\n//# sourceURL=webpack:///./src/assets/images/icons/checkbox-hovered.svg?");
 
 /***/ }),
 
@@ -2490,7 +2514,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.CheckboxSpan = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar CheckboxSpan = function (props) {\n    return react_1.default.createElement(\"input\", __assign({}, props));\n};\nexports.CheckboxSpan = CheckboxSpan;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Checkbox/CheckboxSpan/CheckboxSpan.tsx?");
+eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.CheckboxSpan = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar CheckboxSpan = function (props) {\n    return react_1.default.createElement(\"span\", __assign({}, props));\n};\nexports.CheckboxSpan = CheckboxSpan;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Checkbox/CheckboxSpan/CheckboxSpan.tsx?");
 
 /***/ }),
 
