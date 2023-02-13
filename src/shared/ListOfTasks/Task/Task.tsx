@@ -1,7 +1,6 @@
 import React, { useState, KeyboardEvent } from 'react';
 import styles from './task.css';
 import { Checkbox } from './Checkbox';
-import { TaskText } from './TaskText';
 import { ButtonRemoveTask } from '../../Buttons/ButtonRemoveTask';
 import { PopupRemoveTask } from '../../Popups/PopupRemoveTask';
 
@@ -57,7 +56,7 @@ export const Task = ({ task, tasks, onSetTasks }: Task) => {
         onKeyDownCheckbox={handleKeyDown}
         onFocus={() => setIsShown(true)}
       />
-      <TaskText nameOfTask={task.text} />
+      <p className={styles.taskText}>{task.text}</p>
       {isShown && <ButtonRemoveTask onOpenPopup={handleOpenPopup} onBlur={handleBlur} />}
       {isOpenPopup && (
         <PopupRemoveTask

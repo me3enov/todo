@@ -1,27 +1,13 @@
 import React from 'react';
 import { FieldsetOfForm } from './FieldsetOfForm';
 
-import classNames from 'classnames/bind';
-import styles from './form.css';
-const cx = classNames.bind(styles);
+interface IFormProps extends React.ComponentPropsWithoutRef<'form'> {
+  specialProp?: string;
+}
 
-type PopupAddTask = {
-  styleForForm: string;
-  onSubmitForm: any; // какой сюда тип? 0o
-  children: React.ReactNode;
-};
-
-export const Form = ({ styleForForm, onSubmitForm, children }: PopupAddTask) => {
-  const className = cx(
-    {
-      form: true
-    },
-    styleForForm
-  );
-
+export const Form = (props: IFormProps) => {
+  const { children, ...rest } = props;
   return (
-    <form className={className} noValidate onSubmit={onSubmitForm}>
-      <FieldsetOfForm> {children} </FieldsetOfForm>
-    </form>
+    <form {...rest}> <FieldsetOfForm> {children} </FieldsetOfForm> </form>
   );
 };

@@ -58,7 +58,7 @@ export const PopupAddTask = ({ isOpenPopup, onAddTask, onClosePopup }: PopupAddT
   };
 
   return (
-    <Form styleForForm={styleForForm} onSubmitForm={handleSubmit(onSubmit)}>
+    <Form className={styleForForm} noValidate onSubmit={handleSubmit(onSubmit)}>
       <input
         className={styles.inputOfForm}
         {...register('task', {
