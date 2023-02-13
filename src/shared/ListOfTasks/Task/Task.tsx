@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState, KeyboardEvent } from 'react';
 import styles from './task.css';
-import { useState } from 'react';
 import { Checkbox } from './Checkbox';
 import { TaskText } from './TaskText';
 import { ButtonRemoveTask } from '../../Buttons/ButtonRemoveTask';
@@ -35,7 +34,7 @@ export const Task = ({ task, tasks, onSetTasks }: Task) => {
     setIsChecked(!isChecked);
   };
 
-  const handleKeyDown = (event: KeyboardEvent): void => {
+  const handleKeyDown = (event: KeyboardEvent<HTMLSpanElement>): void => {
     if (event.code === 'Space' || event.code === 'Enter') {
       setIsChecked(!isChecked);
     }

@@ -8,9 +8,9 @@ import { CheckboxSpan } from './CheckboxSpan';
 type Checkbox = {
   labelForCheckbox: string;
   isChecked: boolean;
-  onChangeCheckbox: any;
-  onKeyDownCheckbox: any;
-  onFocus: any;
+  onChangeCheckbox: () => void;
+  onKeyDownCheckbox: any; // ?? что за тип
+  onFocus: () => void;
 };
 
 export const Checkbox = ({
