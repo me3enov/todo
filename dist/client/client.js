@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "483e053cfec24b86f2b3";
+/******/ 	var hotCurrentHash = "6677d276657064dfd044";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -996,28 +996,6 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css":
-/*!*******************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css ***!
-  \*******************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".headerLine__headerLine--1Gw0V {\\n  height: 1px;\\n  width: 100%;\\n  background-color: var(--grayF1);\\n  margin: 20px 0 21px;\\n}\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"headerLine\": \"headerLine__headerLine--1Gw0V\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css?./node_modules/css-loader/dist/cjs.js??ref--6-1");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css":
-/*!*******************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css ***!
-  \*******************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".headerText__headerText--2jYEl {\\n  font-family: 'Montserrat';\\n  font-style: normal;\\n  font-weight: bold;\\n  font-size: 32px;\\n  line-height: 39px;\\n  max-width: 100%;\\n  white-space: nowrap;\\n  overflow: hidden;\\n  -o-text-overflow: ellipsis;\\n  text-overflow: ellipsis;\\n  margin: 0;\\n}\\n\\n.headerText__black--8ug0B {\\n  color: var(--blackPick);\\n}\\n\\n.headerText__blue--26xi- {\\n  color: var(--bluePick);\\n}\\n\\n.headerText__coral--32sdF {\\n  color: var(--coralPick);\\n}\\n\\n.headerText__fuchsia--hnSuD {\\n  color: var(--fuchsiaPick);\\n}\\n\\n.headerText__gray--vZYtX {\\n  color: var(--grayPick);\\n}\\n\\n.headerText__green--3dGvb {\\n  color: var(--greenPick);\\n}\\n\\n.headerText__lightGreen--3lSFv {\\n  color: var(--lightGreenPick);\\n}\\n\\n.headerText__pink--ofZei {\\n  color: var(--pinkPick);\\n}\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"headerText\": \"headerText__headerText--2jYEl\",\n\t\"black\": \"headerText__black--8ug0B\",\n\t\"blue\": \"headerText__blue--26xi-\",\n\t\"coral\": \"headerText__coral--32sdF\",\n\t\"fuchsia\": \"headerText__fuchsia--hnSuD\",\n\t\"gray\": \"headerText__gray--vZYtX\",\n\t\"green\": \"headerText__green--3dGvb\",\n\t\"lightGreen\": \"headerText__lightGreen--3lSFv\",\n\t\"pink\": \"headerText__pink--ofZei\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css?./node_modules/css-loader/dist/cjs.js??ref--6-1");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js?!./src/shared/ListOfBoards/Board/HeaderOfBoard/headerOfBoard.css":
 /*!***********************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./src/shared/ListOfBoards/Board/HeaderOfBoard/headerOfBoard.css ***!
@@ -1025,7 +1003,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".headerOfBoard__headerOfBoard--3C8wg {\\n  display: block;\\n}\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"headerOfBoard\": \"headerOfBoard__headerOfBoard--3C8wg\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/headerOfBoard.css?./node_modules/css-loader/dist/cjs.js??ref--6-1");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".headerOfBoard__headerOfBoard--3C8wg {\\n  display: block;\\n}\\n\\n.headerOfBoard__headerLine--3iMOA {\\n  height: 1px;\\n  width: 100%;\\n  background-color: var(--grayF1);\\n  margin: 20px 0 21px;\\n}\\n\\n.headerOfBoard__headerText--3aOWr {\\n  font-family: 'Montserrat';\\n  font-style: normal;\\n  font-weight: bold;\\n  font-size: 32px;\\n  line-height: 39px;\\n  max-width: 100%;\\n  white-space: nowrap;\\n  overflow: hidden;\\n  -o-text-overflow: ellipsis;\\n  text-overflow: ellipsis;\\n  margin: 0;\\n}\\n\\n.headerOfBoard__black--POp0D {\\n  color: var(--blackPick);\\n}\\n\\n.headerOfBoard__blue--2LryS {\\n  color: var(--bluePick);\\n}\\n\\n.headerOfBoard__coral--R5BX3 {\\n  color: var(--coralPick);\\n}\\n\\n.headerOfBoard__fuchsia--BV06P {\\n  color: var(--fuchsiaPick);\\n}\\n\\n.headerOfBoard__gray--2DPIu {\\n  color: var(--grayPick);\\n}\\n\\n.headerOfBoard__green--27a5p {\\n  color: var(--greenPick);\\n}\\n\\n.headerOfBoard__lightGreen--2BxYW {\\n  color: var(--lightGreenPick);\\n}\\n\\n.headerOfBoard__pink--13xD6 {\\n  color: var(--pinkPick);\\n}\", \"\"]);\n// Exports\nexports.locals = {\n\t\"headerOfBoard\": \"headerOfBoard__headerOfBoard--3C8wg\",\n\t\"headerLine\": \"headerOfBoard__headerLine--3iMOA\",\n\t\"headerText\": \"headerOfBoard__headerText--3aOWr\",\n\t\"black\": \"headerOfBoard__black--POp0D\",\n\t\"blue\": \"headerOfBoard__blue--2LryS\",\n\t\"coral\": \"headerOfBoard__coral--R5BX3\",\n\t\"fuchsia\": \"headerOfBoard__fuchsia--BV06P\",\n\t\"gray\": \"headerOfBoard__gray--2DPIu\",\n\t\"green\": \"headerOfBoard__green--27a5p\",\n\t\"lightGreen\": \"headerOfBoard__lightGreen--2BxYW\",\n\t\"pink\": \"headerOfBoard__pink--13xD6\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/headerOfBoard.css?./node_modules/css-loader/dist/cjs.js??ref--6-1");
 
 /***/ }),
 
@@ -1985,41 +1963,6 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 
 /***/ }),
 
-/***/ "./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/HeaderLine.tsx":
-/*!*******************************************************************************!*\
-  !*** ./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/HeaderLine.tsx ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.HeaderLine = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar headerLine_css_1 = __importDefault(__webpack_require__(/*! ./headerLine.css */ \"./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css\"));\nvar HeaderLine = function () {\n    return react_1.default.createElement(\"div\", { className: headerLine_css_1.default.headerLine });\n};\nexports.HeaderLine = HeaderLine;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/HeaderLine.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css":
-/*!*******************************************************************************!*\
-  !*** ./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader/dist/cjs.js??ref--6-1!./headerLine.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../../../../../node_modules/css-loader/dist/cjs.js??ref--6-1!./headerLine.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../../../../../node_modules/css-loader/dist/cjs.js??ref--6-1!./headerLine.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/headerLine.css?");
-
-/***/ }),
-
-/***/ "./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/index.ts":
-/*!*************************************************************************!*\
-  !*** ./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/index.ts ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./HeaderLine */ \"./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/HeaderLine.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/index.ts?");
-
-/***/ }),
-
 /***/ "./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderOfBoard.tsx":
 /*!***********************************************************************!*\
   !*** ./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderOfBoard.tsx ***!
@@ -2028,42 +1971,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.HeaderOfBoard = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar headerOfBoard_css_1 = __importDefault(__webpack_require__(/*! ./headerOfBoard.css */ \"./src/shared/ListOfBoards/Board/HeaderOfBoard/headerOfBoard.css\"));\nvar HeaderText_1 = __webpack_require__(/*! ./HeaderText */ \"./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/index.ts\");\nvar HeaderLine_1 = __webpack_require__(/*! ./HeaderLine */ \"./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderLine/index.ts\");\nvar HeaderOfBoard = function (_a) {\n    var color = _a.color, text = _a.text;\n    return (react_1.default.createElement(\"div\", { className: headerOfBoard_css_1.default.headerOfBoard },\n        react_1.default.createElement(HeaderText_1.HeaderText, { color: color, text: text }),\n        react_1.default.createElement(HeaderLine_1.HeaderLine, null)));\n};\nexports.HeaderOfBoard = HeaderOfBoard;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderOfBoard.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/HeaderText.tsx":
-/*!*******************************************************************************!*\
-  !*** ./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/HeaderText.tsx ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.HeaderText = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar bind_1 = __importDefault(__webpack_require__(/*! classnames/bind */ \"./node_modules/classnames/bind.js\"));\nvar headerText_css_1 = __importDefault(__webpack_require__(/*! ./headerText.css */ \"./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css\"));\nvar cx = bind_1.default.bind(headerText_css_1.default);\nvar HeaderText = function (_a) {\n    var _b;\n    var color = _a.color, text = _a.text;\n    var className = cx((_b = {\n            headerText: true\n        },\n        _b[\"\" + color] = color,\n        _b));\n    return react_1.default.createElement(\"h2\", { className: className }, text);\n};\nexports.HeaderText = HeaderText;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/HeaderText.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css":
-/*!*******************************************************************************!*\
-  !*** ./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ../../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader/dist/cjs.js??ref--6-1!./headerText.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !../../../../../../node_modules/css-loader/dist/cjs.js??ref--6-1!./headerText.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !../../../../../../node_modules/css-loader/dist/cjs.js??ref--6-1!./headerText.css */ \"./node_modules/css-loader/dist/cjs.js?!./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.i, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/headerText.css?");
-
-/***/ }),
-
-/***/ "./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/index.ts":
-/*!*************************************************************************!*\
-  !*** ./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/index.ts ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./HeaderText */ \"./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/HeaderText.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderText/index.ts?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.HeaderOfBoard = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nvar bind_1 = __importDefault(__webpack_require__(/*! classnames/bind */ \"./node_modules/classnames/bind.js\"));\nvar headerOfBoard_css_1 = __importDefault(__webpack_require__(/*! ./headerOfBoard.css */ \"./src/shared/ListOfBoards/Board/HeaderOfBoard/headerOfBoard.css\"));\nvar cx = bind_1.default.bind(headerOfBoard_css_1.default);\nvar HeaderOfBoard = function (_a) {\n    var _b;\n    var color = _a.color, text = _a.text;\n    var className = cx((_b = {\n            headerText: true\n        },\n        _b[\"\" + color] = color,\n        _b));\n    return (react_1.default.createElement(\"div\", { className: headerOfBoard_css_1.default.headerOfBoard },\n        react_1.default.createElement(\"h2\", { className: className }, text),\n        react_1.default.createElement(\"div\", { className: headerOfBoard_css_1.default.headerLine })));\n};\nexports.HeaderOfBoard = HeaderOfBoard;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/HeaderOfBoard/HeaderOfBoard.tsx?");
 
 /***/ }),
 

@@ -1,7 +1,7 @@
 import React from 'react';
+import classNames from 'classnames/bind';
 import styles from './headerOfBoard.css';
-import { HeaderText } from './HeaderText';
-import { HeaderLine } from './HeaderLine';
+const cx = classNames.bind(styles);
 
 type Header = {
   color: string;
@@ -9,10 +9,15 @@ type Header = {
 };
 
 export const HeaderOfBoard = ({ color, text }: Header) => {
+  const className = cx({
+    headerText: true,
+    [`${color}`]: color
+  });
+
   return (
     <div className={styles.headerOfBoard}>
-      <HeaderText color={color} text={text} />
-      <HeaderLine />
+      <h2 className={className}>{text}</h2>
+      <div className={styles.headerLine} />
     </div>
   );
 };
