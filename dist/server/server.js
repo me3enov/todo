@@ -168,120 +168,27 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 
 /***/ }),
 
-/***/ "./src/shared/Buttons/ButtonAddTask/ButtonAddTask.tsx":
-/*!************************************************************!*\
-  !*** ./src/shared/Buttons/ButtonAddTask/ButtonAddTask.tsx ***!
-  \************************************************************/
+/***/ "./src/shared/Button/Button.tsx":
+/*!**************************************!*\
+  !*** ./src/shared/Button/Button.tsx ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.ButtonAddTask = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar buttonAddTask_css_1 = __importDefault(__webpack_require__(/*! ./buttonAddTask.css */ \"./src/shared/Buttons/ButtonAddTask/buttonAddTask.css\"));\nvar ButtonAddTask = function (_a) {\n    var onOpenPopupAddTask = _a.onOpenPopupAddTask;\n    return (react_1.default.createElement(\"button\", { className: buttonAddTask_css_1.default.buttonAddTask, type: 'button', \"aria-label\": 'Add task', onClick: onOpenPopupAddTask },\n        react_1.default.createElement(\"p\", { className: buttonAddTask_css_1.default.rubricButtonText }, \"New task\")));\n};\nexports.ButtonAddTask = ButtonAddTask;\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonAddTask/ButtonAddTask.tsx?");
+eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __rest = (this && this.__rest) || function (s, e) {\n    var t = {};\n    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)\n        t[p] = s[p];\n    if (s != null && typeof Object.getOwnPropertySymbols === \"function\")\n        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {\n            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))\n                t[p[i]] = s[p[i]];\n        }\n    return t;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Button = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar Button = function (props) {\n    var children = props.children, rest = __rest(props, [\"children\"]);\n    return react_1.default.createElement(\"button\", __assign({}, rest), children);\n};\nexports.Button = Button;\n\n\n//# sourceURL=webpack:///./src/shared/Button/Button.tsx?");
 
 /***/ }),
 
-/***/ "./src/shared/Buttons/ButtonAddTask/buttonAddTask.css":
-/*!************************************************************!*\
-  !*** ./src/shared/Buttons/ButtonAddTask/buttonAddTask.css ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// Exports\nmodule.exports = {\n\t\"buttonAddTask\": \"buttonAddTask__buttonAddTask--MrgWX\",\n\t\"rubric__button-text\": \"buttonAddTask__rubric__button-text--3oMA6\",\n\t\"rubricButtonText\": \"buttonAddTask__rubricButtonText--3f7-K\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonAddTask/buttonAddTask.css?");
-
-/***/ }),
-
-/***/ "./src/shared/Buttons/ButtonClosePopup/ButtonClosePopup.jsx":
-/*!******************************************************************!*\
-  !*** ./src/shared/Buttons/ButtonClosePopup/ButtonClosePopup.jsx ***!
-  \******************************************************************/
+/***/ "./src/shared/Button/index.ts":
+/*!************************************!*\
+  !*** ./src/shared/Button/index.ts ***!
+  \************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.ButtonClosePopup = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar buttonClosePopup_css_1 = __importDefault(__webpack_require__(/*! ./buttonClosePopup.css */ \"./src/shared/Buttons/ButtonClosePopup/buttonClosePopup.css\"));\nvar ButtonClosePopup = function (_a) {\n    var onClosePopup = _a.onClosePopup;\n    return (react_1.default.createElement(\"button\", { type: 'button', tabIndex: 0, className: buttonClosePopup_css_1.default.buttonClosePopup, onClick: onClosePopup, \"aria-label\": 'Close popup' }));\n};\nexports.ButtonClosePopup = ButtonClosePopup;\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonClosePopup/ButtonClosePopup.jsx?");
-
-/***/ }),
-
-/***/ "./src/shared/Buttons/ButtonClosePopup/buttonClosePopup.css":
-/*!******************************************************************!*\
-  !*** ./src/shared/Buttons/ButtonClosePopup/buttonClosePopup.css ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// Exports\nmodule.exports = {\n\t\"buttonClosePopup\": \"buttonClosePopup__buttonClosePopup--2JrBJ\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonClosePopup/buttonClosePopup.css?");
-
-/***/ }),
-
-/***/ "./src/shared/Buttons/ButtonClosePopup/index.js":
-/*!******************************************************!*\
-  !*** ./src/shared/Buttons/ButtonClosePopup/index.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./ButtonClosePopup */ \"./src/shared/Buttons/ButtonClosePopup/ButtonClosePopup.jsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonClosePopup/index.js?");
-
-/***/ }),
-
-/***/ "./src/shared/Buttons/ButtonDefault/ButtonDefault.tsx":
-/*!************************************************************!*\
-  !*** ./src/shared/Buttons/ButtonDefault/ButtonDefault.tsx ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __rest = (this && this.__rest) || function (s, e) {\n    var t = {};\n    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)\n        t[p] = s[p];\n    if (s != null && typeof Object.getOwnPropertySymbols === \"function\")\n        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {\n            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))\n                t[p[i]] = s[p[i]];\n        }\n    return t;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.ButtonDefault = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar ButtonDefault = function (props) {\n    var children = props.children, rest = __rest(props, [\"children\"]);\n    return react_1.default.createElement(\"button\", __assign({}, rest), children);\n};\nexports.ButtonDefault = ButtonDefault;\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonDefault/ButtonDefault.tsx?");
-
-/***/ }),
-
-/***/ "./src/shared/Buttons/ButtonDefault/index.ts":
-/*!***************************************************!*\
-  !*** ./src/shared/Buttons/ButtonDefault/index.ts ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./ButtonDefault */ \"./src/shared/Buttons/ButtonDefault/ButtonDefault.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonDefault/index.ts?");
-
-/***/ }),
-
-/***/ "./src/shared/Buttons/ButtonRemoveTask/ButtonRemoveTask.jsx":
-/*!******************************************************************!*\
-  !*** ./src/shared/Buttons/ButtonRemoveTask/ButtonRemoveTask.jsx ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.ButtonRemoveTask = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar buttonRemoveTask_css_1 = __importDefault(__webpack_require__(/*! ./buttonRemoveTask.css */ \"./src/shared/Buttons/ButtonRemoveTask/buttonRemoveTask.css\"));\nvar ButtonRemoveTask = function (_a) {\n    var onOpenPopup = _a.onOpenPopup, onBlur = _a.onBlur;\n    return (react_1.default.createElement(\"button\", { className: buttonRemoveTask_css_1.default.buttonRemoveTask, type: 'button', \"aria-label\": 'Remove task', onBlur: onBlur, onClick: onOpenPopup }));\n};\nexports.ButtonRemoveTask = ButtonRemoveTask;\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonRemoveTask/ButtonRemoveTask.jsx?");
-
-/***/ }),
-
-/***/ "./src/shared/Buttons/ButtonRemoveTask/buttonRemoveTask.css":
-/*!******************************************************************!*\
-  !*** ./src/shared/Buttons/ButtonRemoveTask/buttonRemoveTask.css ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// Exports\nmodule.exports = {\n\t\"buttonRemoveTask\": \"buttonRemoveTask__buttonRemoveTask--2IcZH\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonRemoveTask/buttonRemoveTask.css?");
-
-/***/ }),
-
-/***/ "./src/shared/Buttons/ButtonRemoveTask/index.js":
-/*!******************************************************!*\
-  !*** ./src/shared/Buttons/ButtonRemoveTask/index.js ***!
-  \******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./ButtonRemoveTask */ \"./src/shared/Buttons/ButtonRemoveTask/ButtonRemoveTask.jsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Buttons/ButtonRemoveTask/index.js?");
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./Button */ \"./src/shared/Button/Button.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Button/index.ts?");
 
 /***/ }),
 
@@ -320,41 +227,6 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 
 /***/ }),
 
-/***/ "./src/shared/Form/ButtonsContainer/ButtonsContainer.jsx":
-/*!***************************************************************!*\
-  !*** ./src/shared/Form/ButtonsContainer/ButtonsContainer.jsx ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.ButtonsContainer = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar buttonsContainer_css_1 = __importDefault(__webpack_require__(/*! ./buttonsContainer.css */ \"./src/shared/Form/ButtonsContainer/buttonsContainer.css\"));\nvar ButtonsContainer = function (_a) {\n    var children = _a.children;\n    return react_1.default.createElement(\"div\", { className: buttonsContainer_css_1.default.buttonsContainer }, children);\n};\nexports.ButtonsContainer = ButtonsContainer;\n\n\n//# sourceURL=webpack:///./src/shared/Form/ButtonsContainer/ButtonsContainer.jsx?");
-
-/***/ }),
-
-/***/ "./src/shared/Form/ButtonsContainer/buttonsContainer.css":
-/*!***************************************************************!*\
-  !*** ./src/shared/Form/ButtonsContainer/buttonsContainer.css ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// Exports\nmodule.exports = {\n\t\"buttonsContainer\": \"buttonsContainer__buttonsContainer--3T352\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Form/ButtonsContainer/buttonsContainer.css?");
-
-/***/ }),
-
-/***/ "./src/shared/Form/ButtonsContainer/index.js":
-/*!***************************************************!*\
-  !*** ./src/shared/Form/ButtonsContainer/index.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./ButtonsContainer */ \"./src/shared/Form/ButtonsContainer/ButtonsContainer.jsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Form/ButtonsContainer/index.js?");
-
-/***/ }),
-
 /***/ "./src/shared/Form/ErrorOfForm/ErrorOfForm.tsx":
 /*!*****************************************************!*\
   !*** ./src/shared/Form/ErrorOfForm/ErrorOfForm.tsx ***!
@@ -390,41 +262,6 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 
 /***/ }),
 
-/***/ "./src/shared/Form/FieldsetOfForm/FieldsetOfForm.jsx":
-/*!***********************************************************!*\
-  !*** ./src/shared/Form/FieldsetOfForm/FieldsetOfForm.jsx ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.FieldsetOfForm = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar fieldsetOfForm_css_1 = __importDefault(__webpack_require__(/*! ./fieldsetOfForm.css */ \"./src/shared/Form/FieldsetOfForm/fieldsetOfForm.css\"));\nvar FieldsetOfForm = function (_a) {\n    var children = _a.children;\n    return react_1.default.createElement(\"fieldset\", { className: fieldsetOfForm_css_1.default.fieldset }, children);\n};\nexports.FieldsetOfForm = FieldsetOfForm;\n\n\n//# sourceURL=webpack:///./src/shared/Form/FieldsetOfForm/FieldsetOfForm.jsx?");
-
-/***/ }),
-
-/***/ "./src/shared/Form/FieldsetOfForm/fieldsetOfForm.css":
-/*!***********************************************************!*\
-  !*** ./src/shared/Form/FieldsetOfForm/fieldsetOfForm.css ***!
-  \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// Exports\nmodule.exports = {\n\t\"fieldset\": \"fieldsetOfForm__fieldset--2235d\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Form/FieldsetOfForm/fieldsetOfForm.css?");
-
-/***/ }),
-
-/***/ "./src/shared/Form/FieldsetOfForm/index.js":
-/*!*************************************************!*\
-  !*** ./src/shared/Form/FieldsetOfForm/index.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./FieldsetOfForm */ \"./src/shared/Form/FieldsetOfForm/FieldsetOfForm.jsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Form/FieldsetOfForm/index.js?");
-
-/***/ }),
-
 /***/ "./src/shared/Form/Form.tsx":
 /*!**********************************!*\
   !*** ./src/shared/Form/Form.tsx ***!
@@ -433,66 +270,31 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __rest = (this && this.__rest) || function (s, e) {\n    var t = {};\n    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)\n        t[p] = s[p];\n    if (s != null && typeof Object.getOwnPropertySymbols === \"function\")\n        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {\n            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))\n                t[p[i]] = s[p[i]];\n        }\n    return t;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Form = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar FieldsetOfForm_1 = __webpack_require__(/*! ./FieldsetOfForm */ \"./src/shared/Form/FieldsetOfForm/index.js\");\nvar Form = function (props) {\n    var children = props.children, rest = __rest(props, [\"children\"]);\n    return (react_1.default.createElement(\"form\", __assign({}, rest),\n        \" \",\n        react_1.default.createElement(FieldsetOfForm_1.FieldsetOfForm, null,\n            \" \",\n            children,\n            \" \"),\n        \" \"));\n};\nexports.Form = Form;\n\n\n//# sourceURL=webpack:///./src/shared/Form/Form.tsx?");
+eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __rest = (this && this.__rest) || function (s, e) {\n    var t = {};\n    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)\n        t[p] = s[p];\n    if (s != null && typeof Object.getOwnPropertySymbols === \"function\")\n        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {\n            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))\n                t[p[i]] = s[p[i]];\n        }\n    return t;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Form = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar form_css_1 = __importDefault(__webpack_require__(/*! ./form.css */ \"./src/shared/Form/form.css\"));\nvar Form = function (props) {\n    var children = props.children, rest = __rest(props, [\"children\"]);\n    return (react_1.default.createElement(\"form\", __assign({}, rest),\n        react_1.default.createElement(\"fieldset\", { className: form_css_1.default.fieldset }, children)));\n};\nexports.Form = Form;\n\n\n//# sourceURL=webpack:///./src/shared/Form/Form.tsx?");
 
 /***/ }),
 
-/***/ "./src/shared/Form/TitleOfContainer/TitleOfContainer.jsx":
+/***/ "./src/shared/Form/TitleOfContainer/TitleOfContainer.tsx":
 /*!***************************************************************!*\
-  !*** ./src/shared/Form/TitleOfContainer/TitleOfContainer.jsx ***!
+  !*** ./src/shared/Form/TitleOfContainer/TitleOfContainer.tsx ***!
   \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.TitleOfContainer = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar titleOfContainer_css_1 = __importDefault(__webpack_require__(/*! ./titleOfContainer.css */ \"./src/shared/Form/TitleOfContainer/titleOfContainer.css\"));\nvar TitleOfForm_1 = __webpack_require__(/*! ./TitleOfForm */ \"./src/shared/Form/TitleOfContainer/TitleOfForm/index.js\");\nvar TitleOfContainer = function (_a) {\n    var nameForTitleOfForm = _a.nameForTitleOfForm;\n    return (react_1.default.createElement(\"div\", { className: titleOfContainer_css_1.default.titleOfContainer },\n        react_1.default.createElement(TitleOfForm_1.TitleOfForm, { nameForTitleOfForm: nameForTitleOfForm })));\n};\nexports.TitleOfContainer = TitleOfContainer;\n\n\n//# sourceURL=webpack:///./src/shared/Form/TitleOfContainer/TitleOfContainer.jsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.TitleOfContainer = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar titleOfContainer_css_1 = __importDefault(__webpack_require__(/*! ./titleOfContainer.css */ \"./src/shared/Form/TitleOfContainer/titleOfContainer.css\"));\nvar TitleOfContainer = function (_a) {\n    var nameForTitleOfForm = _a.nameForTitleOfForm;\n    return (react_1.default.createElement(\"div\", { className: titleOfContainer_css_1.default.titleOfContainer },\n        react_1.default.createElement(\"h3\", { className: titleOfContainer_css_1.default.titleOfForm }, \"Do you want to remove \\\"\" + nameForTitleOfForm + \"\\\"?\")));\n};\nexports.TitleOfContainer = TitleOfContainer;\n\n\n//# sourceURL=webpack:///./src/shared/Form/TitleOfContainer/TitleOfContainer.tsx?");
 
 /***/ }),
 
-/***/ "./src/shared/Form/TitleOfContainer/TitleOfForm/TitleOfForm.jsx":
-/*!**********************************************************************!*\
-  !*** ./src/shared/Form/TitleOfContainer/TitleOfForm/TitleOfForm.jsx ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.TitleOfForm = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar titleOfForm_css_1 = __importDefault(__webpack_require__(/*! ./titleOfForm.css */ \"./src/shared/Form/TitleOfContainer/TitleOfForm/titleOfForm.css\"));\nvar TitleOfForm = function (_a) {\n    var nameForTitleOfForm = _a.nameForTitleOfForm;\n    return react_1.default.createElement(\"h3\", { className: titleOfForm_css_1.default.titleOfForm }, \"Do you want to remove \\\"\" + nameForTitleOfForm + \"\\\"?\");\n};\nexports.TitleOfForm = TitleOfForm;\n\n\n//# sourceURL=webpack:///./src/shared/Form/TitleOfContainer/TitleOfForm/TitleOfForm.jsx?");
-
-/***/ }),
-
-/***/ "./src/shared/Form/TitleOfContainer/TitleOfForm/index.js":
-/*!***************************************************************!*\
-  !*** ./src/shared/Form/TitleOfContainer/TitleOfForm/index.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./TitleOfForm */ \"./src/shared/Form/TitleOfContainer/TitleOfForm/TitleOfForm.jsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Form/TitleOfContainer/TitleOfForm/index.js?");
-
-/***/ }),
-
-/***/ "./src/shared/Form/TitleOfContainer/TitleOfForm/titleOfForm.css":
-/*!**********************************************************************!*\
-  !*** ./src/shared/Form/TitleOfContainer/TitleOfForm/titleOfForm.css ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// Exports\nmodule.exports = {\n\t\"titleOfForm\": \"titleOfForm__titleOfForm--zCgrD\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Form/TitleOfContainer/TitleOfForm/titleOfForm.css?");
-
-/***/ }),
-
-/***/ "./src/shared/Form/TitleOfContainer/index.js":
+/***/ "./src/shared/Form/TitleOfContainer/index.ts":
 /*!***************************************************!*\
-  !*** ./src/shared/Form/TitleOfContainer/index.js ***!
+  !*** ./src/shared/Form/TitleOfContainer/index.ts ***!
   \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./TitleOfContainer */ \"./src/shared/Form/TitleOfContainer/TitleOfContainer.jsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Form/TitleOfContainer/index.js?");
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./TitleOfContainer */ \"./src/shared/Form/TitleOfContainer/TitleOfContainer.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Form/TitleOfContainer/index.ts?");
 
 /***/ }),
 
@@ -503,7 +305,18 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"titleOfContainer\": \"titleOfContainer__titleOfContainer--3O9Ru\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Form/TitleOfContainer/titleOfContainer.css?");
+eval("// Exports\nmodule.exports = {\n\t\"titleOfContainer\": \"titleOfContainer__titleOfContainer--3O9Ru\",\n\t\"titleOfForm\": \"titleOfContainer__titleOfForm--1js-l\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Form/TitleOfContainer/titleOfContainer.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Form/form.css":
+/*!**********************************!*\
+  !*** ./src/shared/Form/form.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Exports\nmodule.exports = {\n\t\"fieldset\": \"form__fieldset--3w8c6\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Form/form.css?");
 
 /***/ }),
 
@@ -539,7 +352,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __spreadArray = (this && this.__spreadArray) || function (to, from) {\n    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)\n        to[j] = from[i];\n    return to;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.ContainerAddTask = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar containerAddTask_css_1 = __importDefault(__webpack_require__(/*! ./containerAddTask.css */ \"./src/shared/ListOfBoards/Board/ContainerAddTask/containerAddTask.css\"));\nvar react_2 = __webpack_require__(/*! react */ \"react\");\nvar ButtonAddTask_1 = __webpack_require__(/*! ../../../Buttons/ButtonAddTask/ButtonAddTask */ \"./src/shared/Buttons/ButtonAddTask/ButtonAddTask.tsx\");\nvar PopupAddTask_1 = __webpack_require__(/*! ../../../Popups/PopupAddTask/PopupAddTask */ \"./src/shared/Popups/PopupAddTask/PopupAddTask.tsx\");\nvar ContainerAddTask = function (_a) {\n    var tasks = _a.tasks, onSetTasks = _a.onSetTasks;\n    var _b = react_2.useState(true), isOpenPopup = _b[0], setIsOpenPopup = _b[1];\n    var handleOpenPopupAddTask = function () {\n        setIsOpenPopup(false);\n    };\n    var handleClosePopupAddTask = function () {\n        setIsOpenPopup(true);\n    };\n    var handleAddTask = function (taskForTasks) {\n        onSetTasks(__spreadArray([taskForTasks], tasks));\n        setIsOpenPopup(false);\n    };\n    return (react_1.default.createElement(\"div\", { className: containerAddTask_css_1.default.containerAddTask }, isOpenPopup ? (react_1.default.createElement(ButtonAddTask_1.ButtonAddTask, { onOpenPopupAddTask: handleOpenPopupAddTask })) : (react_1.default.createElement(PopupAddTask_1.PopupAddTask, { isOpenPopup: isOpenPopup, onAddTask: handleAddTask, onClosePopup: handleClosePopupAddTask }))));\n};\nexports.ContainerAddTask = ContainerAddTask;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/ContainerAddTask/ContainerAddTask.tsx?");
+eval("\nvar __spreadArray = (this && this.__spreadArray) || function (to, from) {\n    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)\n        to[j] = from[i];\n    return to;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.ContainerAddTask = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar containerAddTask_css_1 = __importDefault(__webpack_require__(/*! ./containerAddTask.css */ \"./src/shared/ListOfBoards/Board/ContainerAddTask/containerAddTask.css\"));\nvar react_2 = __webpack_require__(/*! react */ \"react\");\nvar Button_1 = __webpack_require__(/*! ../../../Button */ \"./src/shared/Button/index.ts\");\nvar PopupAddTask_1 = __webpack_require__(/*! ../../../Popups/PopupAddTask/PopupAddTask */ \"./src/shared/Popups/PopupAddTask/PopupAddTask.tsx\");\nvar ContainerAddTask = function (_a) {\n    var tasks = _a.tasks, onSetTasks = _a.onSetTasks;\n    var _b = react_2.useState(true), isOpenPopup = _b[0], setIsOpenPopup = _b[1];\n    var handleOpenPopupAddTask = function () {\n        setIsOpenPopup(false);\n    };\n    var handleClosePopupAddTask = function () {\n        setIsOpenPopup(true);\n    };\n    var handleAddTask = function (taskForTasks) {\n        onSetTasks(__spreadArray([taskForTasks], tasks));\n        setIsOpenPopup(false);\n    };\n    return (react_1.default.createElement(\"div\", { className: containerAddTask_css_1.default.containerAddTask }, isOpenPopup ? (react_1.default.createElement(Button_1.Button, { className: containerAddTask_css_1.default.buttonAddTask, type: 'button', \"aria-label\": 'Add task', onClick: handleOpenPopupAddTask },\n        react_1.default.createElement(\"p\", { className: containerAddTask_css_1.default.rubricButtonText }, 'New task'))) : (react_1.default.createElement(PopupAddTask_1.PopupAddTask, { isOpenPopup: isOpenPopup, onAddTask: handleAddTask, onClosePopup: handleClosePopupAddTask }))));\n};\nexports.ContainerAddTask = ContainerAddTask;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/ContainerAddTask/ContainerAddTask.tsx?");
 
 /***/ }),
 
@@ -550,7 +363,7 @@ eval("\nvar __spreadArray = (this && this.__spreadArray) || function (to, from) 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"containerAddTask\": \"containerAddTask__containerAddTask--3oGDJ\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/ContainerAddTask/containerAddTask.css?");
+eval("// Exports\nmodule.exports = {\n\t\"containerAddTask\": \"containerAddTask__containerAddTask--3oGDJ\",\n\t\"buttonAddTask\": \"containerAddTask__buttonAddTask--40rLR\",\n\t\"rubric__button-text\": \"containerAddTask__rubric__button-text--3NAuT\",\n\t\"rubricButtonText\": \"containerAddTask__rubricButtonText--3jzyA\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/ListOfBoards/Board/ContainerAddTask/containerAddTask.css?");
 
 /***/ }),
 
@@ -832,7 +645,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Task = void 0;\nvar react_1 = __importStar(__webpack_require__(/*! react */ \"react\"));\nvar task_css_1 = __importDefault(__webpack_require__(/*! ./task.css */ \"./src/shared/ListOfTasks/Task/task.css\"));\nvar Checkbox_1 = __webpack_require__(/*! ./Checkbox */ \"./src/shared/ListOfTasks/Task/Checkbox/index.ts\");\nvar ButtonRemoveTask_1 = __webpack_require__(/*! ../../Buttons/ButtonRemoveTask */ \"./src/shared/Buttons/ButtonRemoveTask/index.js\");\nvar PopupRemoveTask_1 = __webpack_require__(/*! ../../Popups/PopupRemoveTask */ \"./src/shared/Popups/PopupRemoveTask/index.ts\");\nvar Task = function (_a) {\n    var task = _a.task, tasks = _a.tasks, onSetTasks = _a.onSetTasks;\n    var _b = react_1.useState(false), isOpenPopup = _b[0], setIsOpenPopup = _b[1];\n    var _c = react_1.useState(task.checked), isChecked = _c[0], setIsChecked = _c[1];\n    var _d = react_1.useState(false), isShown = _d[0], setIsShown = _d[1];\n    var handleOpenPopup = function () {\n        setIsOpenPopup(true);\n    };\n    var handleClosePopup = function () {\n        setIsOpenPopup(false);\n    };\n    var handleChangeCheckbox = function () {\n        setIsChecked(!isChecked);\n    };\n    var handleKeyDown = function (event) {\n        if (event.code === 'Space' || event.code === 'Enter') {\n            setIsChecked(!isChecked);\n        }\n    };\n    var handleBlur = function () {\n        setIsShown(false);\n    };\n    return (react_1.default.createElement(\"li\", { className: task_css_1.default.task, onMouseEnter: function () { return setIsShown(true); }, onMouseLeave: function () { return setIsShown(false); } },\n        react_1.default.createElement(Checkbox_1.Checkbox, { labelForCheckbox: \"Check \" + task.text, isChecked: isChecked, onChangeCheckbox: handleChangeCheckbox, onKeyDownCheckbox: handleKeyDown, onFocus: function () { return setIsShown(true); } }),\n        react_1.default.createElement(\"p\", { className: task_css_1.default.taskText }, task.text),\n        isShown && react_1.default.createElement(ButtonRemoveTask_1.ButtonRemoveTask, { onOpenPopup: handleOpenPopup, onBlur: handleBlur }),\n        isOpenPopup && (react_1.default.createElement(PopupRemoveTask_1.PopupRemoveTask, { task: task, tasks: tasks, isOpenPopup: isOpenPopup, onClosePopup: handleClosePopup, onSetTasks: onSetTasks }))));\n};\nexports.Task = Task;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Task.tsx?");
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Task = void 0;\nvar react_1 = __importStar(__webpack_require__(/*! react */ \"react\"));\nvar task_css_1 = __importDefault(__webpack_require__(/*! ./task.css */ \"./src/shared/ListOfTasks/Task/task.css\"));\nvar Checkbox_1 = __webpack_require__(/*! ./Checkbox */ \"./src/shared/ListOfTasks/Task/Checkbox/index.ts\");\nvar Button_1 = __webpack_require__(/*! ../../Button */ \"./src/shared/Button/index.ts\");\nvar PopupRemoveTask_1 = __webpack_require__(/*! ../../Popups/PopupRemoveTask */ \"./src/shared/Popups/PopupRemoveTask/index.ts\");\nvar Task = function (_a) {\n    var task = _a.task, tasks = _a.tasks, onSetTasks = _a.onSetTasks;\n    var _b = react_1.useState(false), isOpenPopup = _b[0], setIsOpenPopup = _b[1];\n    var _c = react_1.useState(task.checked), isChecked = _c[0], setIsChecked = _c[1];\n    var _d = react_1.useState(false), isShown = _d[0], setIsShown = _d[1];\n    var handleOpenPopup = function () {\n        setIsOpenPopup(true);\n    };\n    var handleClosePopup = function () {\n        setIsOpenPopup(false);\n    };\n    var handleChangeCheckbox = function () {\n        setIsChecked(!isChecked);\n    };\n    var handleKeyDown = function (event) {\n        if (event.code === 'Space' || event.code === 'Enter') {\n            setIsChecked(!isChecked);\n        }\n    };\n    var handleBlur = function () {\n        setIsShown(false);\n    };\n    return (react_1.default.createElement(\"li\", { className: task_css_1.default.task, onMouseEnter: function () { return setIsShown(true); }, onMouseLeave: function () { return setIsShown(false); } },\n        react_1.default.createElement(Checkbox_1.Checkbox, { labelForCheckbox: \"Check \" + task.text, isChecked: isChecked, onChangeCheckbox: handleChangeCheckbox, onKeyDownCheckbox: handleKeyDown, onFocus: function () { return setIsShown(true); } }),\n        react_1.default.createElement(\"p\", { className: task_css_1.default.taskText }, task.text),\n        isShown && react_1.default.createElement(Button_1.Button, { className: task_css_1.default.buttonRemoveTask, type: 'button', \"aria-label\": 'Remove task', onClick: handleOpenPopup, onBlur: handleBlur }),\n        isOpenPopup && (react_1.default.createElement(PopupRemoveTask_1.PopupRemoveTask, { task: task, tasks: tasks, isOpenPopup: isOpenPopup, onClosePopup: handleClosePopup, onSetTasks: onSetTasks }))));\n};\nexports.Task = Task;\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/Task.tsx?");
 
 /***/ }),
 
@@ -855,7 +668,7 @@ eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ?
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"task\": \"task__task--2YYcJ\",\n\t\"taskText\": \"task__taskText--10t12\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/task.css?");
+eval("// Exports\nmodule.exports = {\n\t\"task\": \"task__task--2YYcJ\",\n\t\"taskText\": \"task__taskText--10t12\",\n\t\"buttonRemoveTask\": \"task__buttonRemoveTask--15i4e\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/ListOfTasks/Task/task.css?");
 
 /***/ }),
 
@@ -890,7 +703,7 @@ eval("// Exports\nmodule.exports = {\n\t\"listOfTasks\": \"listOfTasks__listOfTa
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.PopupAddTask = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar react_hook_form_1 = __webpack_require__(/*! react-hook-form */ \"react-hook-form\");\nvar v4_1 = __importDefault(__webpack_require__(/*! uuid/v4 */ \"uuid/v4\"));\nvar ts_1 = __webpack_require__(/*! ../../Form/ts */ \"./src/shared/Form/ts.js\");\nvar ErrorOfForm_1 = __webpack_require__(/*! ../../Form/ErrorOfForm */ \"./src/shared/Form/ErrorOfForm/index.ts\");\nvar ButtonsContainer_1 = __webpack_require__(/*! ../../Form/ButtonsContainer */ \"./src/shared/Form/ButtonsContainer/index.js\");\nvar ButtonDefault_1 = __webpack_require__(/*! ../../Buttons/ButtonDefault */ \"./src/shared/Buttons/ButtonDefault/index.ts\");\nvar bind_1 = __importDefault(__webpack_require__(/*! classnames/bind */ \"classnames/bind\"));\nvar popupAddTask_css_1 = __importDefault(__webpack_require__(/*! ./popupAddTask.css */ \"./src/shared/Popups/PopupAddTask/popupAddTask.css\"));\nvar cx = bind_1.default.bind(popupAddTask_css_1.default);\nvar PopupAddTask = function (_a) {\n    var isOpenPopup = _a.isOpenPopup, onAddTask = _a.onAddTask, onClosePopup = _a.onClosePopup;\n    var _b = react_hook_form_1.useForm({\n        mode: 'onBlur'\n    }), register = _b.register, _c = _b.formState, errors = _c.errors, isValid = _c.isValid, handleSubmit = _b.handleSubmit, reset = _b.reset;\n    var styleForForm = cx({\n        popupAddTask: true,\n        popupAddTaskDisabled: isOpenPopup\n    });\n    var styleForSubmitButton = cx({\n        buttonDefault: true,\n        buttonSubmit: true\n    });\n    var onSubmit = function (data) {\n        onAddTask({\n            id: v4_1.default(),\n            text: (data === null || data === void 0 ? void 0 : data.task) || 'Untitled',\n            checked: false\n        });\n        onClosePopup();\n        reset();\n    };\n    return (react_1.default.createElement(ts_1.Form, { className: styleForForm, noValidate: true, onSubmit: handleSubmit(onSubmit) },\n        react_1.default.createElement(\"input\", __assign({ className: popupAddTask_css_1.default.inputOfForm }, register('task', {\n            required: 'Required field',\n            minLength: {\n                value: 3,\n                message: 'Minimum 3 characters'\n            },\n            maxLength: {\n                value: 50,\n                message: 'Maximum 50 characters'\n            }\n        }))),\n        react_1.default.createElement(ErrorOfForm_1.ErrorOfForm, { isDisabledButton: !isValid, errorOfInput: errors.task }),\n        react_1.default.createElement(ButtonsContainer_1.ButtonsContainer, null,\n            react_1.default.createElement(ButtonDefault_1.ButtonDefault, { className: styleForSubmitButton, type: 'submit', \"aria-label\": 'Add Task', disabled: !isValid }, 'Add Task'),\n            react_1.default.createElement(ButtonDefault_1.ButtonDefault, { className: popupAddTask_css_1.default.buttonDefault, type: 'button', \"aria-label\": 'Cancel add task', onClick: onClosePopup }, 'Cancel'))));\n};\nexports.PopupAddTask = PopupAddTask;\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupAddTask/PopupAddTask.tsx?");
+eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.PopupAddTask = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar react_hook_form_1 = __webpack_require__(/*! react-hook-form */ \"react-hook-form\");\nvar v4_1 = __importDefault(__webpack_require__(/*! uuid/v4 */ \"uuid/v4\"));\nvar ts_1 = __webpack_require__(/*! ../../Form/ts */ \"./src/shared/Form/ts.js\");\nvar ErrorOfForm_1 = __webpack_require__(/*! ../../Form/ErrorOfForm */ \"./src/shared/Form/ErrorOfForm/index.ts\");\nvar Button_1 = __webpack_require__(/*! ../../Button */ \"./src/shared/Button/index.ts\");\nvar bind_1 = __importDefault(__webpack_require__(/*! classnames/bind */ \"classnames/bind\"));\nvar popupAddTask_css_1 = __importDefault(__webpack_require__(/*! ./popupAddTask.css */ \"./src/shared/Popups/PopupAddTask/popupAddTask.css\"));\nvar cx = bind_1.default.bind(popupAddTask_css_1.default);\nvar PopupAddTask = function (_a) {\n    var isOpenPopup = _a.isOpenPopup, onAddTask = _a.onAddTask, onClosePopup = _a.onClosePopup;\n    var _b = react_hook_form_1.useForm({\n        mode: 'onBlur'\n    }), register = _b.register, _c = _b.formState, errors = _c.errors, isValid = _c.isValid, handleSubmit = _b.handleSubmit, reset = _b.reset;\n    var styleForForm = cx({\n        popupAddTask: true,\n        popupAddTaskDisabled: isOpenPopup\n    });\n    var styleForSubmitButton = cx({\n        buttonDefault: true,\n        buttonSubmit: true\n    });\n    var onSubmit = function (data) {\n        onAddTask({\n            id: v4_1.default(),\n            text: (data === null || data === void 0 ? void 0 : data.task) || 'Untitled',\n            checked: false\n        });\n        onClosePopup();\n        reset();\n    };\n    return (react_1.default.createElement(ts_1.Form, { className: styleForForm, noValidate: true, onSubmit: handleSubmit(onSubmit) },\n        react_1.default.createElement(\"input\", __assign({ className: popupAddTask_css_1.default.inputOfForm }, register('task', {\n            required: 'Required field',\n            minLength: {\n                value: 3,\n                message: 'Minimum 3 characters'\n            },\n            maxLength: {\n                value: 50,\n                message: 'Maximum 50 characters'\n            }\n        }))),\n        react_1.default.createElement(ErrorOfForm_1.ErrorOfForm, { isDisabledButton: !isValid, errorOfInput: errors.task }),\n        react_1.default.createElement(\"div\", { className: popupAddTask_css_1.default.buttonsContainer },\n            react_1.default.createElement(Button_1.Button, { className: styleForSubmitButton, type: 'submit', \"aria-label\": 'Add Task', disabled: !isValid }, 'Add Task'),\n            react_1.default.createElement(Button_1.Button, { className: popupAddTask_css_1.default.buttonDefault, type: 'button', \"aria-label\": 'Cancel add task', onClick: onClosePopup }, 'Cancel'))));\n};\nexports.PopupAddTask = PopupAddTask;\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupAddTask/PopupAddTask.tsx?");
 
 /***/ }),
 
@@ -901,7 +714,7 @@ eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"popupAddTask\": \"popupAddTask__popupAddTask--rtDPk\",\n\t\"popupAddTaskDisabled\": \"popupAddTask__popupAddTaskDisabled--2ijIl\",\n\t\"inputOfForm\": \"popupAddTask__inputOfForm--2gsn6\",\n\t\"buttonDefault\": \"popupAddTask__buttonDefault--2av8f\",\n\t\"buttonSubmit\": \"popupAddTask__buttonSubmit--2o7g0\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupAddTask/popupAddTask.css?");
+eval("// Exports\nmodule.exports = {\n\t\"popupAddTask\": \"popupAddTask__popupAddTask--rtDPk\",\n\t\"popupAddTaskDisabled\": \"popupAddTask__popupAddTaskDisabled--2ijIl\",\n\t\"inputOfForm\": \"popupAddTask__inputOfForm--2gsn6\",\n\t\"buttonDefault\": \"popupAddTask__buttonDefault--2av8f\",\n\t\"buttonSubmit\": \"popupAddTask__buttonSubmit--2o7g0\",\n\t\"buttonsContainer\": \"popupAddTask__buttonsContainer--3d-H5\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupAddTask/popupAddTask.css?");
 
 /***/ }),
 
@@ -913,7 +726,7 @@ eval("// Exports\nmodule.exports = {\n\t\"popupAddTask\": \"popupAddTask__popupA
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.PopupRemoveTask = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar popupRemoveTask_css_1 = __importDefault(__webpack_require__(/*! ./popupRemoveTask.css */ \"./src/shared/Popups/PopupRemoveTask/popupRemoveTask.css\"));\nvar PopupWithForm_1 = __webpack_require__(/*! ../PopupWithForm/PopupWithForm */ \"./src/shared/Popups/PopupWithForm/PopupWithForm.tsx\");\nvar ButtonDefault_1 = __webpack_require__(/*! ../../Buttons/ButtonDefault */ \"./src/shared/Buttons/ButtonDefault/index.ts\");\nvar TitleOfContainer_1 = __webpack_require__(/*! ../../Form/TitleOfContainer */ \"./src/shared/Form/TitleOfContainer/index.js\");\nvar PopupRemoveTask = function (_a) {\n    var task = _a.task, tasks = _a.tasks, isOpenPopup = _a.isOpenPopup, onClosePopup = _a.onClosePopup, onSetTasks = _a.onSetTasks;\n    var handleSubmit = function (event) {\n        event.preventDefault();\n        onSetTasks(tasks.filter(function (itemOfTasks) { return itemOfTasks.id !== task.id; }));\n        onClosePopup();\n    };\n    return (react_1.default.createElement(PopupWithForm_1.PopupWithForm, { styleForForm: popupRemoveTask_css_1.default.form, isOpenPopup: isOpenPopup, onClosePopup: onClosePopup, onSubmitForm: handleSubmit },\n        react_1.default.createElement(TitleOfContainer_1.TitleOfContainer, { nameForTitleOfForm: task.text }),\n        react_1.default.createElement(ButtonDefault_1.ButtonDefault, { className: popupRemoveTask_css_1.default.buttonRemove, type: 'submit', \"aria-label\": 'Remove Task' }, 'Remove Task')));\n};\nexports.PopupRemoveTask = PopupRemoveTask;\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupRemoveTask/PopupRemoveTask.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.PopupRemoveTask = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar popupRemoveTask_css_1 = __importDefault(__webpack_require__(/*! ./popupRemoveTask.css */ \"./src/shared/Popups/PopupRemoveTask/popupRemoveTask.css\"));\nvar PopupWithForm_1 = __webpack_require__(/*! ../PopupWithForm/PopupWithForm */ \"./src/shared/Popups/PopupWithForm/PopupWithForm.tsx\");\nvar Button_1 = __webpack_require__(/*! ../../Button */ \"./src/shared/Button/index.ts\");\nvar TitleOfContainer_1 = __webpack_require__(/*! ../../Form/TitleOfContainer */ \"./src/shared/Form/TitleOfContainer/index.ts\");\nvar PopupRemoveTask = function (_a) {\n    var task = _a.task, tasks = _a.tasks, isOpenPopup = _a.isOpenPopup, onClosePopup = _a.onClosePopup, onSetTasks = _a.onSetTasks;\n    var handleSubmit = function (event) {\n        event.preventDefault();\n        onSetTasks(tasks.filter(function (itemOfTasks) { return itemOfTasks.id !== task.id; }));\n        onClosePopup();\n    };\n    return (react_1.default.createElement(PopupWithForm_1.PopupWithForm, { styleForForm: popupRemoveTask_css_1.default.form, isOpenPopup: isOpenPopup, onClosePopup: onClosePopup, onSubmitForm: handleSubmit },\n        react_1.default.createElement(TitleOfContainer_1.TitleOfContainer, { nameForTitleOfForm: task.text }),\n        react_1.default.createElement(Button_1.Button, { className: popupRemoveTask_css_1.default.buttonRemove, type: 'submit', \"aria-label\": 'Remove Task' }, 'Remove Task')));\n};\nexports.PopupRemoveTask = PopupRemoveTask;\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupRemoveTask/PopupRemoveTask.tsx?");
 
 /***/ }),
 
@@ -948,7 +761,7 @@ eval("// Exports\nmodule.exports = {\n\t\"form\": \"popupRemoveTask__form--1qz_A
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.PopupWithForm = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar ButtonClosePopup_1 = __webpack_require__(/*! ../../Buttons/ButtonClosePopup */ \"./src/shared/Buttons/ButtonClosePopup/index.js\");\nvar ts_1 = __webpack_require__(/*! ../../Form/ts */ \"./src/shared/Form/ts.js\");\nvar bind_1 = __importDefault(__webpack_require__(/*! classnames/bind */ \"classnames/bind\"));\nvar popupWithForm_css_1 = __importDefault(__webpack_require__(/*! ./popupWithForm.css */ \"./src/shared/Popups/PopupWithForm/popupWithForm.css\"));\nvar cx = bind_1.default.bind(popupWithForm_css_1.default);\nvar PopupWithForm = function (_a) {\n    var styleForForm = _a.styleForForm, isOpenPopup = _a.isOpenPopup, onClosePopup = _a.onClosePopup, onSubmitForm = _a.onSubmitForm, children = _a.children;\n    var classNameForPopup = cx({\n        popup: true,\n        popupOpened: isOpenPopup\n    });\n    var handleClickClosePopup = function (event) {\n        if (event.target === event.currentTarget) {\n            onClosePopup();\n        }\n    };\n    return (react_1.default.createElement(\"div\", { onClick: handleClickClosePopup, className: classNameForPopup },\n        react_1.default.createElement(\"div\", { className: popupWithForm_css_1.default.popupContainer },\n            react_1.default.createElement(ButtonClosePopup_1.ButtonClosePopup, { onClosePopup: handleClickClosePopup }),\n            react_1.default.createElement(ts_1.Form, { className: styleForForm, noValidate: true, onSubmit: onSubmitForm }, children))));\n};\nexports.PopupWithForm = PopupWithForm;\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupWithForm/PopupWithForm.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.PopupWithForm = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar ts_1 = __webpack_require__(/*! ../../Form/ts */ \"./src/shared/Form/ts.js\");\nvar Button_1 = __webpack_require__(/*! ../../Button */ \"./src/shared/Button/index.ts\");\nvar bind_1 = __importDefault(__webpack_require__(/*! classnames/bind */ \"classnames/bind\"));\nvar popupWithForm_css_1 = __importDefault(__webpack_require__(/*! ./popupWithForm.css */ \"./src/shared/Popups/PopupWithForm/popupWithForm.css\"));\nvar cx = bind_1.default.bind(popupWithForm_css_1.default);\nvar PopupWithForm = function (_a) {\n    var styleForForm = _a.styleForForm, isOpenPopup = _a.isOpenPopup, onClosePopup = _a.onClosePopup, onSubmitForm = _a.onSubmitForm, children = _a.children;\n    var classNameForPopup = cx({\n        popup: true,\n        popupOpened: isOpenPopup\n    });\n    var handleClickClosePopup = function (event) {\n        if (event.target === event.currentTarget) {\n            onClosePopup();\n        }\n    };\n    return (react_1.default.createElement(\"div\", { onClick: handleClickClosePopup, className: classNameForPopup },\n        react_1.default.createElement(\"div\", { className: popupWithForm_css_1.default.popupContainer },\n            react_1.default.createElement(Button_1.Button, { className: popupWithForm_css_1.default.buttonClosePopup, type: 'button', \"aria-label\": 'Close popup', onClick: onClosePopup }),\n            react_1.default.createElement(ts_1.Form, { className: styleForForm, noValidate: true, onSubmit: onSubmitForm }, children))));\n};\nexports.PopupWithForm = PopupWithForm;\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupWithForm/PopupWithForm.tsx?");
 
 /***/ }),
 
@@ -959,7 +772,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// Exports\nmodule.exports = {\n\t\"popup\": \"popupWithForm__popup--1klhv\",\n\t\"popupOpened\": \"popupWithForm__popupOpened--3jOuE\",\n\t\"popupContainer\": \"popupWithForm__popupContainer--3bqjK\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupWithForm/popupWithForm.css?");
+eval("// Exports\nmodule.exports = {\n\t\"popup\": \"popupWithForm__popup--1klhv\",\n\t\"popupOpened\": \"popupWithForm__popupOpened--3jOuE\",\n\t\"popupContainer\": \"popupWithForm__popupContainer--3bqjK\",\n\t\"buttonClosePopup\": \"popupWithForm__buttonClosePopup--b4nKn\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupWithForm/popupWithForm.css?");
 
 /***/ }),
 

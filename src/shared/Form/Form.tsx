@@ -1,5 +1,5 @@
 import React from 'react';
-import { FieldsetOfForm } from './FieldsetOfForm';
+import styles from "./form.css";
 
 interface IFormProps extends React.ComponentPropsWithoutRef<'form'> {
   specialProp?: string;
@@ -8,6 +8,8 @@ interface IFormProps extends React.ComponentPropsWithoutRef<'form'> {
 export const Form = (props: IFormProps) => {
   const { children, ...rest } = props;
   return (
-    <form {...rest}> <FieldsetOfForm> {children} </FieldsetOfForm> </form>
+    <form {...rest}>
+      <fieldset className={styles.fieldset}>{children}</fieldset>
+    </form>
   );
 };

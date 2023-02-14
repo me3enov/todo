@@ -4,8 +4,7 @@ import uuid from 'uuid/v4';
 
 import { Form } from '../../Form/ts';
 import { ErrorOfForm } from '../../Form/ErrorOfForm';
-import { ButtonsContainer } from '../../Form/ButtonsContainer';
-import { ButtonDefault } from '../../Buttons/ButtonDefault';
+import { Button } from '../../Button';
 
 import classNames from 'classnames/bind';
 import styles from './popupAddTask.css';
@@ -74,24 +73,24 @@ export const PopupAddTask = ({ isOpenPopup, onAddTask, onClosePopup }: PopupAddT
         })}
       />
       <ErrorOfForm isDisabledButton={!isValid} errorOfInput={errors.task} />
-      <ButtonsContainer>
-        <ButtonDefault
+      <div className={styles.buttonsContainer}>
+        <Button
           className={styleForSubmitButton}
           type={'submit'}
           aria-label={'Add Task'}
           disabled={!isValid}
         >
           {'Add Task'}
-        </ButtonDefault>
-        <ButtonDefault
+        </Button>
+        <Button
           className={styles.buttonDefault}
           type={'button'}
           aria-label={'Cancel add task'}
           onClick={onClosePopup}
         >
           {'Cancel'}
-        </ButtonDefault>
-      </ButtonsContainer>
+        </Button>
+      </div>
     </Form>
   );
 };

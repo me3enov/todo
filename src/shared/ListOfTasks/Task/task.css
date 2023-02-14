@@ -30,3 +30,37 @@
   margin: 0 26px 0 15px;
   padding: 0;
 }
+
+.buttonRemoveTask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 11px;
+  width: 11px;
+  background-color: var(--white);
+  background-image: url('../../../assets/images/icons/remove-task.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11px 11px;
+  border-radius: 50%;
+  border: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 0 0 -11px;
+}
+
+.buttonRemoveTask:hover,
+.buttonRemoveTask:focus {
+  background-image: url('../../../assets/images/icons/remove-task-hovered.svg');
+}
+
+.buttonRemoveTask:focus {
+  outline: none;
+}
+
+.buttonRemoveTask:active {
+  outline: none;
+}

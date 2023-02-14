@@ -1,7 +1,7 @@
 import React, { useState, KeyboardEvent } from 'react';
 import styles from './task.css';
 import { Checkbox } from './Checkbox';
-import { ButtonRemoveTask } from '../../Buttons/ButtonRemoveTask';
+import { Button } from '../../Button';
 import { PopupRemoveTask } from '../../Popups/PopupRemoveTask';
 
 type Task = {
@@ -57,7 +57,7 @@ export const Task = ({ task, tasks, onSetTasks }: Task) => {
         onFocus={() => setIsShown(true)}
       />
       <p className={styles.taskText}>{task.text}</p>
-      {isShown && <ButtonRemoveTask onOpenPopup={handleOpenPopup} onBlur={handleBlur} />}
+      {isShown && <Button className={styles.buttonRemoveTask} type={'button'} aria-label={'Remove task'} onClick={handleOpenPopup} onBlur={handleBlur} />}
       {isOpenPopup && (
         <PopupRemoveTask
           task={task}

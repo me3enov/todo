@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './containerAddTask.css';
 import { useState } from 'react';
-import { ButtonAddTask } from '../../../Buttons/ButtonAddTask/ButtonAddTask';
+import { Button } from '../../../Button';
 import { PopupAddTask } from '../../../Popups/PopupAddTask/PopupAddTask';
 
 interface ITaskProps {
@@ -34,7 +34,13 @@ export const ContainerAddTask = ({ tasks, onSetTasks }: ContainerAddTask) => {
   return (
     <div className={styles.containerAddTask}>
       {isOpenPopup ? (
-        <ButtonAddTask onOpenPopupAddTask={handleOpenPopupAddTask} />
+        <Button
+          className={styles.buttonAddTask}
+          type={'button'}
+          aria-label={'Add task'}
+          onClick={handleOpenPopupAddTask}>
+            <p className={styles.rubricButtonText}>{'New task'}</p>
+        </Button>
       ) : (
         <PopupAddTask
           isOpenPopup={isOpenPopup}

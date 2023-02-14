@@ -1,6 +1,6 @@
 import React from 'react';
-import { ButtonClosePopup } from '../../Buttons/ButtonClosePopup';
 import { Form } from '../../Form/ts';
+import { Button } from '../../Button';
 
 import classNames from 'classnames/bind';
 import styles from './popupWithForm.css';
@@ -29,7 +29,11 @@ export const PopupWithForm = ({ styleForForm, isOpenPopup, onClosePopup, onSubmi
   return (
     <div onClick={handleClickClosePopup} className={classNameForPopup}>
       <div className={styles.popupContainer}>
-        <ButtonClosePopup onClosePopup={handleClickClosePopup} />
+        <Button
+            className={styles.buttonClosePopup}
+            type={'button'}
+            aria-label={'Close popup'}
+            onClick={onClosePopup} />
         <Form className={styleForForm} noValidate onSubmit={onSubmitForm}>{children}</Form>
       </div>
     </div>

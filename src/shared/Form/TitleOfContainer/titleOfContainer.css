@@ -3,3 +3,21 @@
   max-height: 175px;
   padding: 0 0 13px;
 }
+
+.titleOfForm {
+  max-width: 100%;
+  max-height: 100%;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--black);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  line-clamp: 5;
+  box-orient: vertical;
+  margin: 0;
+  padding: 0;
+}

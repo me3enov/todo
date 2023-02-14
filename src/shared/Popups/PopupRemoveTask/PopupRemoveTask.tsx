@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './popupRemoveTask.css';
 import { PopupWithForm } from '../PopupWithForm/PopupWithForm';
-import { ButtonDefault } from '../../Buttons/ButtonDefault';
+import { Button } from '../../Button';
 import { TitleOfContainer } from '../../Form/TitleOfContainer';
 
 type Task = {
@@ -33,7 +33,7 @@ export const PopupRemoveTask = ({ task, tasks, isOpenPopup, onClosePopup, onSetT
       onSubmitForm={handleSubmit}
     >
       <TitleOfContainer nameForTitleOfForm={task.text} />
-      <ButtonDefault className={styles.buttonRemove} type={'submit'} aria-label={'Remove Task'}>{'Remove Task'}</ButtonDefault>
+      <Button className={styles.buttonRemove} type={'submit'} aria-label={'Remove Task'}>{'Remove Task'}</Button>
     </PopupWithForm>
   );
 };
