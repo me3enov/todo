@@ -1,0 +1,121 @@
+@media all and (min-width: 200px) {
+  .sidebar {
+    max-width: 200px;
+    min-height: 100vh;
+    height: 100%;
+    display: block;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    background-color: var(--sidebar);
+    border-right: 1 solid var(--grayF1);
+    padding: 20px;
+    margin-right: 55px;
+    white-space: nowrap;
+  }
+}
+
+.sidebarTitle {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 19px;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  max-width: calc(100% - 32px);
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  margin: 27px 0 0 32px;
+  padding: 0;
+}
+
+.sidebarTitle:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  background-image: url('../../assets/images/icons/entypo-list.svg');
+  display: block;
+  margin: 0 0 0 -24px;
+  padding: 0;
+}
+
+.buttonAddFolder {
+  max-width: calc(100% - 12px);
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  margin: 0 0 0 12px;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.buttonAddFolder:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 10px;
+  background-image: url('../../assets/images/icons/plus-task.svg');
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.buttonText {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.15px;
+  color: var(--gray46);
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  margin: 0 10px 0 20px;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.buttonAddFolder:hover:after,
+.buttonAddFolder:focus:after {
+  background-image: url('../../assets/images/icons/plus-task-hovered.svg');
+}
+
+.buttonAddFolder:hover > .rubric__button-text,
+.buttonAddFolder:focus > .rubric__button-text {
+  color: var(--black08);
+}
+
+.buttonAddFolder:focus {
+  outline: 2px solid var(--outline);
+  border-radius: 2px;
+}
+
+.buttonAddFolder:active {
+  outline: none;
+}

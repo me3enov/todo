@@ -1,0 +1,7 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(min-content, 200px) 1fr;
+  align-items: start;
+  background-color: var(--white);
+  margin: 0 auto;
+}

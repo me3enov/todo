@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './listOfBoards.css';
 import { Board } from './Board';
 
-interface IBoardsProps {
+interface IListOfBoardsProps {
   boards: {
     [key: string]: {
       title: {
@@ -18,7 +18,7 @@ interface IBoardsProps {
   };
 }
 
-export const ListOfBoards = ({ boards }: IBoardsProps) => {
+export const ListOfBoards = ({ boards }: IListOfBoardsProps) => {
   return (
     <ul className={styles.listOfBoards}>
       {Object.entries(boards).map(([boardId, board]) => {

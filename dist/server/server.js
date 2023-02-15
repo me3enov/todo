@@ -117,7 +117,7 @@ eval("\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.App = exports.AppComponent = void 0;\n__webpack_require__(/*! ./main.global.css */ \"./src/main.global.css\");\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"react-hot-loader/root\");\nvar React = __importStar(__webpack_require__(/*! react */ \"react\"));\nvar Content_1 = __webpack_require__(/*! ./shared/Content */ \"./src/shared/Content/index.ts\");\nvar itemsForContent_1 = __webpack_require__(/*! ./data/itemsForContent */ \"./src/data/itemsForContent.js\");\nvar AppComponent = function () {\n    return (React.createElement(\"div\", { className: 'app' },\n        React.createElement(Content_1.Content, { itemsForContent: itemsForContent_1.itemsForContent })));\n};\nexports.AppComponent = AppComponent;\nexports.App = root_1.hot(exports.AppComponent);\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.App = exports.AppComponent = void 0;\n__webpack_require__(/*! ./main.global.css */ \"./src/main.global.css\");\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"react-hot-loader/root\");\nvar React = __importStar(__webpack_require__(/*! react */ \"react\"));\nvar Layout_1 = __webpack_require__(/*! ./shared/Layout */ \"./src/shared/Layout/index.ts\");\nvar Sidebar_1 = __webpack_require__(/*! ./shared/Sidebar */ \"./src/shared/Sidebar/index.ts\");\nvar Content_1 = __webpack_require__(/*! ./shared/Content */ \"./src/shared/Content/index.ts\");\nvar itemsForContent_1 = __webpack_require__(/*! ./data/itemsForContent */ \"./src/data/itemsForContent.js\");\nvar AppComponent = function () {\n    return (React.createElement(Layout_1.Layout, null,\n        React.createElement(Sidebar_1.Sidebar, { rubrics: itemsForContent_1.itemsForContent }),\n        React.createElement(Content_1.Content, { itemsForContent: itemsForContent_1.itemsForContent })));\n};\nexports.AppComponent = AppComponent;\nexports.App = root_1.hot(exports.AppComponent);\n\n\n//# sourceURL=webpack:///./src/App.tsx?");
 
 /***/ }),
 
@@ -140,7 +140,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__(/*! -!../node_modules/css-loader/dist/cjs.js!./vendor/normalize.css */ \"./node_modules/css-loader/dist/cjs.js!./src/vendor/normalize.css\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);\"]);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);\"]);\n// Module\nexports.push([module.i, \"/* normalize css*/\\n\\n/* fonts */\\n\\n/* root */\\n:root {\\n  --black: #000;\\n  --red: #ff4646;\\n  --green: #4dd599;\\n  --gray: #f4f6f8;\\n  --outline: rgba(0, 102, 255, 0.5);\\n  --black08: rgba(0, 0, 0, 0.8);\\n\\n  --grayPick: #c9d1d3;\\n  --greenPick: #42b883;\\n  --bluePick: #64c4ed;\\n  --pinkPick: #ffbbcc;\\n  --lightGreenPick: #b6e6bd;\\n  --fuchsiaPick: #c355f5;\\n  --blackPick: #09011a;\\n  --coralPick: #ff6464;\\n\\n  --whiteLightness: 100%;\\n  --white: hsl(0, 0%, var(--whiteLightness));\\n  --grayF1: hsl(0, 0%, calc(var(--whiteLightness) - 5%));\\n  --grayEF: hsl(0, 0%, calc(var(--whiteLightness) - 6%));\\n  --grayE8: hsl(0, 0%, calc(var(--whiteLightness) - 9%));\\n  --grayE5: hsl(0, 0%, calc(var(--whiteLightness) - 10%));\\n  --grayC7: hsl(0, 0%, calc(var(--whiteLightness) - 22%));\\n  --grayB6: hsl(0, 0%, calc(var(--whiteLightness) - 29.4%));\\n  --gray9C: hsl(0, 0%, calc(var(--whiteLightness) - 38.8%));\\n  --gray46: hsl(0, 0%, calc(var(--whiteLightness) - 54%));\\n  --gray48: hsl(0, 0%, calc(var(--whiteLightness) - 58.8%));\\n  --gray5C: hsl(0, 0%, calc(var(--whiteLightness) - 64%));\\n  --gray52: hsl(0, 0%, calc(var(--whiteLightness) - 68%));\\n}\\n\\n/* body */\\nbody {\\n  padding: 0;\\n  margin: 0;\\n  background-color: var(--white);\\n}\\n\\n/* document */\\n* {\\n  color: var(--black);\\n  -webkit-box-sizing: border-box;\\n  box-sizing: border-box;\\n  font-family: 'Lato', serif;\\n  -webkit-font-smoothing: antialiased;\\n  -moz-osx-font-smoothing: grayscale;\\n  text-rendering: optimizeLegibility;\\n  -webkit-text-size-adjust: 100%;\\n  -ms-text-size-adjust: 100%;\\n  -moz-text-size-adjust: 100%;\\n  -ms-font-feature-settings: 'kern' 1;\\n  -webkit-font-feature-settings: 'kern';\\n  font-feature-settings: 'kern';\\n  font-size: 16px;\\n  line-height: 19px;\\n}\\n\\n/* list */\\nul {\\n  margin: 0;\\n  padding: 0;\\n  list-style: none;\\n}\\n\\n/* link */\\na {\\n  text-decoration: none;\\n}\\n\\n/* button */\\nbutton {\\n  padding: 0;\\n  border: 0;\\n  background: transparent;\\n  cursor: pointer;\\n}\\n\\n.app {\\n  background-color: var(--white);\\n  display: -webkit-box;\\n  display: -ms-flexbox;\\n  display: flex;\\n  -webkit-box-orient: vertical;\\n  -webkit-box-direction: normal;\\n  -ms-flex-direction: column;\\n  flex-direction: column;\\n  -webkit-box-align: center;\\n  -ms-flex-align: center;\\n  align-items: center;\\n  -webkit-box-pack: start;\\n  -ms-flex-pack: start;\\n  justify-content: flex-start;\\n  position: relative;\\n  min-height: 100vh;\\n  height: 100%;\\n  margin: 0 auto;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/main.global.css?");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_AT_RULE_IMPORT_0___ = __webpack_require__(/*! -!../node_modules/css-loader/dist/cjs.js!./vendor/normalize.css */ \"./node_modules/css-loader/dist/cjs.js!./src/vendor/normalize.css\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.i(___CSS_LOADER_AT_RULE_IMPORT_0___);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);\"]);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);\"]);\n// Module\nexports.push([module.i, \"/* normalize css*/\\n\\n/* fonts */\\n\\n/* root */\\n:root {\\n  --black: #000;\\n  --red: #ff4646;\\n  --green: #4dd599;\\n  --gray: #f4f6f8;\\n  --outline: rgba(0, 102, 255, 0.5);\\n  --sidebar: #F4F6F8;\\n  --black08: rgba(0, 0, 0, 0.8);\\n\\n  --grayPick: #c9d1d3;\\n  --greenPick: #42b883;\\n  --bluePick: #64c4ed;\\n  --pinkPick: #ffbbcc;\\n  --lightGreenPick: #b6e6bd;\\n  --fuchsiaPick: #c355f5;\\n  --blackPick: #09011a;\\n  --coralPick: #ff6464;\\n\\n  --whiteLightness: 100%;\\n  --white: hsl(0, 0%, var(--whiteLightness));\\n  --grayF8: hsl(0, 0%, calc(var(--whiteLightness) - 3%));\\n  --grayF1: hsl(0, 0%, calc(var(--whiteLightness) - 5%));\\n  --grayEF: hsl(0, 0%, calc(var(--whiteLightness) - 6%));\\n  --grayE8: hsl(0, 0%, calc(var(--whiteLightness) - 9%));\\n  --grayE5: hsl(0, 0%, calc(var(--whiteLightness) - 10%));\\n  --grayC7: hsl(0, 0%, calc(var(--whiteLightness) - 22%));\\n  --grayB6: hsl(0, 0%, calc(var(--whiteLightness) - 29.4%));\\n  --gray9C: hsl(0, 0%, calc(var(--whiteLightness) - 38.8%));\\n  --gray46: hsl(0, 0%, calc(var(--whiteLightness) - 54%));\\n  --gray48: hsl(0, 0%, calc(var(--whiteLightness) - 58.8%));\\n  --gray5C: hsl(0, 0%, calc(var(--whiteLightness) - 64%));\\n  --gray52: hsl(0, 0%, calc(var(--whiteLightness) - 68%));\\n}\\n\\n/* body */\\nbody {\\n  padding: 0;\\n  margin: 0;\\n  background-color: var(--white);\\n}\\n\\n/* document */\\n* {\\n  color: var(--black);\\n  -webkit-box-sizing: border-box;\\n  box-sizing: border-box;\\n  font-family: 'Lato', serif;\\n  -webkit-font-smoothing: antialiased;\\n  -moz-osx-font-smoothing: grayscale;\\n  text-rendering: optimizeLegibility;\\n  -webkit-text-size-adjust: 100%;\\n  -ms-text-size-adjust: 100%;\\n  -moz-text-size-adjust: 100%;\\n  -ms-font-feature-settings: 'kern' 1;\\n  -webkit-font-feature-settings: 'kern';\\n  font-feature-settings: 'kern';\\n  font-size: 16px;\\n  line-height: 19px;\\n}\\n\\n/* list */\\nul {\\n  margin: 0;\\n  padding: 0;\\n  list-style: none;\\n}\\n\\n/* link */\\na {\\n  text-decoration: none;\\n}\\n\\n/* button */\\nbutton {\\n  padding: 0;\\n  border: 0;\\n  background: transparent;\\n  cursor: pointer;\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/main.global.css?");
 
 /***/ }),
 
@@ -152,7 +152,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.indexTemplate = void 0;\nvar indexTemplate = function (content) { return \"\\n<!DOCTYPE html>\\n<html lang=\\\"ru\\\">\\n\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>Solving Programming Problems</title>\\n  <script src=\\\"/static/client.js\\\" type=\\\"application/javascript\\\"></script>\\n</head>\\n\\n<body>\\n  <div id=\\\"react_root\\\">\" + content + \"</div>\\n</body>\\n\\n</html>\\n\"; };\nexports.indexTemplate = indexTemplate;\n\n\n//# sourceURL=webpack:///./src/server/indexTemplate.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.indexTemplate = void 0;\nvar indexTemplate = function (content) { return \"\\n<!DOCTYPE html>\\n<html lang=\\\"ru\\\">\\n\\n<head>\\n  <meta charset=\\\"UTF-8\\\">\\n  <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\">\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\n  <title>todo list</title>\\n  <script src=\\\"/static/client.js\\\" type=\\\"application/javascript\\\"></script>\\n</head>\\n\\n<body>\\n  <div id=\\\"react_root\\\">\" + content + \"</div>\\n</body>\\n\\n</html>\\n\"; };\nexports.indexTemplate = indexTemplate;\n\n\n//# sourceURL=webpack:///./src/server/indexTemplate.js?");
 
 /***/ }),
 
@@ -329,6 +329,41 @@ eval("// Exports\nmodule.exports = {\n\t\"fieldset\": \"form__fieldset--3w8c6\"\
 
 "use strict";
 eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./Form */ \"./src/shared/Form/Form.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Form/ts.js?");
+
+/***/ }),
+
+/***/ "./src/shared/Layout/Layout.tsx":
+/*!**************************************!*\
+  !*** ./src/shared/Layout/Layout.tsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Layout = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar layout_css_1 = __importDefault(__webpack_require__(/*! ./layout.css */ \"./src/shared/Layout/layout.css\"));\nfunction Layout(_a) {\n    var children = _a.children;\n    return react_1.default.createElement(\"div\", { className: layout_css_1.default.layout }, children);\n}\nexports.Layout = Layout;\n\n\n//# sourceURL=webpack:///./src/shared/Layout/Layout.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Layout/index.ts":
+/*!************************************!*\
+  !*** ./src/shared/Layout/index.ts ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./Layout */ \"./src/shared/Layout/Layout.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Layout/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Layout/layout.css":
+/*!**************************************!*\
+  !*** ./src/shared/Layout/layout.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Exports\nmodule.exports = {\n\t\"layout\": \"layout__layout--2fANc\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Layout/layout.css?");
 
 /***/ }),
 
@@ -703,6 +738,111 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /***/ (function(module, exports) {
 
 eval("// Exports\nmodule.exports = {\n\t\"popup\": \"popupWithForm__popup--1klhv\",\n\t\"popupOpened\": \"popupWithForm__popupOpened--3jOuE\",\n\t\"popupContainer\": \"popupWithForm__popupContainer--3bqjK\",\n\t\"buttonClosePopup\": \"popupWithForm__buttonClosePopup--b4nKn\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Popups/PopupWithForm/popupWithForm.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Sidebar/ListOfRubrics/ListOfRubrics.tsx":
+/*!************************************************************!*\
+  !*** ./src/shared/Sidebar/ListOfRubrics/ListOfRubrics.tsx ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.ListOfRubrics = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar listOfRubrics_css_1 = __importDefault(__webpack_require__(/*! ./listOfRubrics.css */ \"./src/shared/Sidebar/ListOfRubrics/listOfRubrics.css\"));\nvar Rubric_1 = __webpack_require__(/*! ./Rubric */ \"./src/shared/Sidebar/ListOfRubrics/Rubric/index.ts\");\nvar ListOfRubrics = function (_a) {\n    var rubrics = _a.rubrics;\n    return (react_1.default.createElement(\"ul\", { className: listOfRubrics_css_1.default.listOfRubrics }, Object.entries(rubrics).map(function (_a) {\n        var rubricId = _a[0], rubric = _a[1];\n        return react_1.default.createElement(Rubric_1.Rubric, { key: rubricId, rubric: rubric });\n    })));\n};\nexports.ListOfRubrics = ListOfRubrics;\n\n\n//# sourceURL=webpack:///./src/shared/Sidebar/ListOfRubrics/ListOfRubrics.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Sidebar/ListOfRubrics/Rubric/Rubric.tsx":
+/*!************************************************************!*\
+  !*** ./src/shared/Sidebar/ListOfRubrics/Rubric/Rubric.tsx ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {\n    Object.defineProperty(o, \"default\", { enumerable: true, value: v });\n}) : function(o, v) {\n    o[\"default\"] = v;\n});\nvar __importStar = (this && this.__importStar) || function (mod) {\n    if (mod && mod.__esModule) return mod;\n    var result = {};\n    if (mod != null) for (var k in mod) if (k !== \"default\" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);\n    __setModuleDefault(result, mod);\n    return result;\n};\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Rubric = void 0;\nvar react_1 = __importStar(__webpack_require__(/*! react */ \"react\"));\nvar Button_1 = __webpack_require__(/*! ../../../Button */ \"./src/shared/Button/index.ts\");\nvar bind_1 = __importDefault(__webpack_require__(/*! classnames/bind */ \"classnames/bind\"));\nvar rubric_css_1 = __importDefault(__webpack_require__(/*! ./rubric.css */ \"./src/shared/Sidebar/ListOfRubrics/Rubric/rubric.css\"));\nvar cx = bind_1.default.bind(rubric_css_1.default);\nvar Rubric = function (_a) {\n    var _b;\n    var rubric = _a.rubric;\n    var _c = react_1.useState(true), isShown = _c[0], setIsShown = _c[1];\n    var classNameForMark = cx((_b = {\n            mark: true\n        },\n        _b[\"\" + rubric.title.color] = rubric.title.color,\n        _b));\n    return (react_1.default.createElement(\"li\", { className: rubric_css_1.default.rubric, \"aria-label\": rubric.title.text },\n        react_1.default.createElement(Button_1.Button, { className: rubric_css_1.default.buttonSelect, type: 'button', \"aria-label\": 'Rubric selection' },\n            react_1.default.createElement(\"div\", { className: classNameForMark }),\n            react_1.default.createElement(\"p\", { className: rubric_css_1.default.buttonText }, rubric.title.text),\n            isShown && react_1.default.createElement(\"span\", { className: rubric_css_1.default.buttonUnselect, role: 'button', \"aria-label\": 'Remove task', tabIndex: 0 }))));\n};\nexports.Rubric = Rubric;\n\n\n//# sourceURL=webpack:///./src/shared/Sidebar/ListOfRubrics/Rubric/Rubric.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Sidebar/ListOfRubrics/Rubric/index.ts":
+/*!**********************************************************!*\
+  !*** ./src/shared/Sidebar/ListOfRubrics/Rubric/index.ts ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./Rubric */ \"./src/shared/Sidebar/ListOfRubrics/Rubric/Rubric.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Sidebar/ListOfRubrics/Rubric/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Sidebar/ListOfRubrics/Rubric/rubric.css":
+/*!************************************************************!*\
+  !*** ./src/shared/Sidebar/ListOfRubrics/Rubric/rubric.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Exports\nmodule.exports = {\n\t\"rubric\": \"rubric__rubric--2UpQc\",\n\t\"buttonSelect\": \"rubric__buttonSelect--3xg_l\",\n\t\"buttonText\": \"rubric__buttonText--33YmH\",\n\t\"buttonUnselect\": \"rubric__buttonUnselect--2BZ3q\",\n\t\"mark\": \"rubric__mark--30O2b\",\n\t\"black\": \"rubric__black--2r8Uc\",\n\t\"blue\": \"rubric__blue--2Qu-c\",\n\t\"coral\": \"rubric__coral--37cU4\",\n\t\"fuchsia\": \"rubric__fuchsia--1dYk3\",\n\t\"gray\": \"rubric__gray--ho24D\",\n\t\"green\": \"rubric__green--klnTi\",\n\t\"lightGreen\": \"rubric__lightGreen--20E0v\",\n\t\"pink\": \"rubric__pink--1kGkM\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Sidebar/ListOfRubrics/Rubric/rubric.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Sidebar/ListOfRubrics/index.ts":
+/*!***************************************************!*\
+  !*** ./src/shared/Sidebar/ListOfRubrics/index.ts ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./ListOfRubrics */ \"./src/shared/Sidebar/ListOfRubrics/ListOfRubrics.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Sidebar/ListOfRubrics/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Sidebar/ListOfRubrics/listOfRubrics.css":
+/*!************************************************************!*\
+  !*** ./src/shared/Sidebar/ListOfRubrics/listOfRubrics.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Exports\nmodule.exports = {\n\t\"listOfRubrics\": \"listOfRubrics__listOfRubrics--1zJ9M\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Sidebar/ListOfRubrics/listOfRubrics.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Sidebar/Sidebar.tsx":
+/*!****************************************!*\
+  !*** ./src/shared/Sidebar/Sidebar.tsx ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Sidebar = void 0;\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"react\"));\nvar sidebar_css_1 = __importDefault(__webpack_require__(/*! ./sidebar.css */ \"./src/shared/Sidebar/sidebar.css\"));\nvar ListOfRubrics_1 = __webpack_require__(/*! ./ListOfRubrics */ \"./src/shared/Sidebar/ListOfRubrics/index.ts\");\nvar Button_1 = __webpack_require__(/*! ../Button */ \"./src/shared/Button/index.ts\");\nfunction Sidebar(_a) {\n    var rubrics = _a.rubrics;\n    return (react_1.default.createElement(\"div\", { className: sidebar_css_1.default.sidebar },\n        react_1.default.createElement(\"h3\", { className: sidebar_css_1.default.sidebarTitle }, 'All tasks'),\n        react_1.default.createElement(ListOfRubrics_1.ListOfRubrics, { rubrics: rubrics }),\n        react_1.default.createElement(Button_1.Button, { className: sidebar_css_1.default.buttonAddFolder, type: 'button', \"aria-label\": 'Add task' },\n            react_1.default.createElement(\"p\", { className: sidebar_css_1.default.buttonText }, 'New task'))));\n}\nexports.Sidebar = Sidebar;\n\n\n//# sourceURL=webpack:///./src/shared/Sidebar/Sidebar.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Sidebar/index.ts":
+/*!*************************************!*\
+  !*** ./src/shared/Sidebar/index.ts ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });\n}) : (function(o, m, k, k2) {\n    if (k2 === undefined) k2 = k;\n    o[k2] = m[k];\n}));\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__exportStar(__webpack_require__(/*! ./Sidebar */ \"./src/shared/Sidebar/Sidebar.tsx\"), exports);\n\n\n//# sourceURL=webpack:///./src/shared/Sidebar/index.ts?");
+
+/***/ }),
+
+/***/ "./src/shared/Sidebar/sidebar.css":
+/*!****************************************!*\
+  !*** ./src/shared/Sidebar/sidebar.css ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// Exports\nmodule.exports = {\n\t\"sidebar\": \"sidebar__sidebar--J13cG\",\n\t\"sidebarTitle\": \"sidebar__sidebarTitle--1HhBp\",\n\t\"buttonAddFolder\": \"sidebar__buttonAddFolder--1YyIi\",\n\t\"buttonText\": \"sidebar__buttonText--3_r8M\",\n\t\"rubric__button-text\": \"sidebar__rubric__button-text--2GAKD\"\n};\n\n\n//# sourceURL=webpack:///./src/shared/Sidebar/sidebar.css?");
 
 /***/ }),
 

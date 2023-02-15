@@ -53,9 +53,9 @@
 
 .rubricButtonText {
   font-style: normal;
-  letter-spacing: 1px;
   font-size: 16px;
   line-height: 19px;
+  letter-spacing: 0.15px;
   color: var(--grayB6);
   max-width: 100%;
   white-space: nowrap;

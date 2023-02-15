@@ -47,6 +47,10 @@
   outline: 2px solid var(--outline);
 }
 
+.checkboxSpan:active {
+  outline: none;
+}
+
 .checkboxSpan_checked {
   background-color: var(--green);
   background-image: url('../../../../assets/images/icons/checkbox-checked.svg');
@@ -58,4 +62,8 @@
   background-color: var(--green);
   background-image: url('../../../../assets/images/icons/checkbox-checked.svg');
   border: none;
+}
+
+.checkboxSpan_checked:active {
+  outline: none;
 }
