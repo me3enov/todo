@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import uuid from 'uuid/v4';
 
-import { Form } from '../../Form/ts';
+import { Form } from '../../Form';
 import { ErrorOfForm } from '../../Form/ErrorOfForm';
 import { Button } from '../../Button';
 

@@ -1,13 +1,6 @@
 .task {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
   flex-flow: row nowrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   max-width: 100%;
   padding: 10px 10px 10px 0;
@@ -25,17 +18,13 @@
   max-width: calc(100% - 35px);
   white-space: nowrap;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   margin: 0 26px 0 15px;
   padding: 0;
 }
 
 .buttonRemoveTask {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 11px;
   width: 11px;
@@ -46,8 +35,6 @@
   background-size: 11px 11px;
   border-radius: 50%;
   border: none;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
   transition: 0.3s;
   margin: 0 0 0 -11px;
 }

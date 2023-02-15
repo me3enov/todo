@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form } from '../../Form/ts';
+import { Form } from '../../Form';
 import { Button } from '../../Button';
 
 import classNames from 'classnames/bind';

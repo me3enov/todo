@@ -20,7 +20,7 @@ interface ISidebarProps {
 }
 
 
-export function Sidebar( {rubrics}: ISidebarProps ) {
+export const Sidebar = ( {rubrics}: ISidebarProps ) => {
   return (
     <div className={styles.sidebar}>
       <h3 className={styles.sidebarTitle}>{'All tasks'}</h3>
