@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './content.css';
+import styles from './content.less';
 import { ListOfBoards } from '../ListOfBoards';
 
 interface IItemsForContentProps {

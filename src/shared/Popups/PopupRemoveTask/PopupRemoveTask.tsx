@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './popupRemoveTask.css';
+import styles from './popupRemoveTask.less';
 import { PopupWithForm } from '../PopupWithForm/PopupWithForm';
 import { Button } from '../../Button';
 import { TitleOfContainer } from '../../Form/TitleOfContainer';

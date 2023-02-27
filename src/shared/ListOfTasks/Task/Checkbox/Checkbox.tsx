@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-import styles from './checkbox.css';
+import styles from './checkbox.less';
 const cx = classNames.bind(styles);
 import { CheckboxInput } from './CheckboxInput';
 import { CheckboxSpan } from './CheckboxSpan';

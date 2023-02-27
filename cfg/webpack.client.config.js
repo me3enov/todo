@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === 'development';
 const IS_PROD = NODE_ENV === 'production';
-const GLOBAL_CSS_REGEXP = /\.global\.css$/;
+const GLOBAL_LESS_REGEXP = /\.global\.less$/;
 
 function setupDevtool() {
   if (IS_DEV) return 'eval';
@@ -43,7 +43,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.less$/,
         use: [
           'style-loader',
           {
@@ -55,12 +55,13 @@ module.exports = {
               },
             },
           },
+          'less-loader',
         ],
-        exclude: GLOBAL_CSS_REGEXP,
+        exclude: GLOBAL_LESS_REGEXP,
       },
       {
-        test: GLOBAL_CSS_REGEXP,
-        use: ['style-loader', 'css-loader'],
+        test: GLOBAL_LESS_REGEXP,
+        use: ['style-loader', 'css-loader', 'less-loader'],
       },
     ],
   },

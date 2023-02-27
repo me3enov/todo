@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './board.css';
+import styles from './board.less';
 import { HeaderOfBoard } from './HeaderOfBoard';
 import { ListOfTasks } from '../../ListOfTasks';
 import { ContainerAddTask } from './ContainerAddTask';

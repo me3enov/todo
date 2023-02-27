@@ -1,7 +1,7 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const NODE_ENV = process.env.NODE_ENV;
-const GLOBAL_CSS_REGEXP = /\.global\.css$/;
+const GLOBAL_LESS_REGEXP = /\.global\.less$/;
 
 module.exports = {
   target: 'node',
@@ -29,7 +29,7 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.less$/,
         use: [
           {
             loader: 'css-loader',
@@ -41,11 +41,12 @@ module.exports = {
               onlyLocals: true,
             },
           },
+          'less-loader',
         ],
-        exclude: GLOBAL_CSS_REGEXP,
+        exclude: GLOBAL_LESS_REGEXP,
       },
       {
-        test: GLOBAL_CSS_REGEXP,
+        test: GLOBAL_LESS_REGEXP,
         use: ['css-loader'],
       },
     ],

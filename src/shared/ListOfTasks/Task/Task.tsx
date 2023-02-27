@@ -1,5 +1,5 @@
 import React, { useState, KeyboardEvent } from 'react';
-import styles from './task.css';
+import styles from './task.less';
 import { Checkbox } from './Checkbox';
 import { Button } from '../../Button';
 import { PopupRemoveTask } from '../../Popups/PopupRemoveTask';

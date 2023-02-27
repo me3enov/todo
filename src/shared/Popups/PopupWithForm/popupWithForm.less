@@ -51,16 +51,10 @@
   -webkit-tap-highlight-color: transparent;
   transition: 0.3s;
   cursor: pointer;
-}
 
-.buttonClosePopup:hover,
-.buttonClosePopup:focus {
-  background-image: url('../../../assets/images/icons/close-hovered.svg');
-}
-.buttonClosePopup:focus {
-  outline: 2px solid var(--outline);
-}
-
-.buttonClosePopup:active {
-  outline: none;
+  &:hover,
+  &:focus {
+    background-image: url('../../../assets/images/icons/close-hovered.svg');
+    outline: none;
+  }
 }

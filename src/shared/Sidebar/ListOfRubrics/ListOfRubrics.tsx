@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './listOfRubrics.css';
+import styles from './listOfRubrics.less';
 import { Rubric } from './Rubric';
 
 interface IListOfRubricsProps {

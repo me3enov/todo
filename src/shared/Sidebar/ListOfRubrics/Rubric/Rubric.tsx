@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Button } from '../../../Button';
 
 import classNames from 'classnames/bind';
-import styles from './rubric.css';
+import styles from './rubric.less';
 const cx = classNames.bind(styles);
 
 

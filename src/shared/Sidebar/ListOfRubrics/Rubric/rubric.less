@@ -28,35 +28,14 @@
   -webkit-tap-highlight-color: transparent;
   transition: 0.4s;
   padding: 0;
-}
 
-.buttonSelect:hover,
-.buttonSelect:focus {
-  background-color: var(--grayF8);
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.buttonSelect:focus {
-  outline: 2px solid var(--outline);
-}
-
-.buttonSelect:active {
-  background-color: var(--white);
-  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-  outline: none;
-}
-
-.buttonSelect:disabled {
-  background-color: var(--grayF1);
-  color: var(--grayB6);
-  cursor: not-allowed;
-}
-
-.buttonSelect[disabled]:hover,
-.buttonSelect[disabled]:focus {
-  background-color: var(--grayE8);
+  &:hover,
+  &:focus {
+    background-color: var(--grayF8);
+    -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    outline: none;
+  }
 }
 
 .buttonText {
@@ -90,14 +69,12 @@
   border: none;
   transition: 0.3s;
   margin: 0 10px;
-}
 
-.buttonUnselect:focus {
-  outline: 2px solid var(--outline);
-}
-
-.buttonUnselect:active {
-  outline: none;
+  &:hover,
+  &:focus {
+    background-image: url('../../../../assets/images/icons/remove-task-hovered.svg');
+    outline: none;
+  }
 }
 
 .mark {

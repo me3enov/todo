@@ -1,0 +1,55 @@
+.checkboxSpan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px 8px;
+  border-radius: 50%;
+  border: 2px solid var(--grayE8);
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  &:hover,
+  &:focus{
+    background-color: var(--grayF1);
+    border: 2px solid var(--grayF1);
+    background-image: url('../../../../assets/images/icons/checkbox-hovered.svg');
+    outline: none;
+  }
+}
+
+.checkboxInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkboxInput:disabled ~ .checkboxSpan:hover,
+.checkboxInput:disabled ~ .checkboxSpan:focus {
+  background-color: var(--grayE8);
+  background-image: none;
+  outline: none;
+  cursor: not-allowed;
+}
+
+.checkboxInput:checked ~ .checkboxSpan {
+  background-color: var(--green);
+  background-image: url('../../../../assets/images/icons/checkbox-checked.svg');
+  border: 2px solid var(--green);
+  &:hover,
+  &:focus{
+    border: 2px solid var(--dark-green);
+    background-color: var(--dark-green);
+  }
+}

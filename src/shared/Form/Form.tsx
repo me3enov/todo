@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./form.css";
+import styles from "./form.less";
 
 interface IFormProps extends React.ComponentPropsWithoutRef<'form'> {
   specialProp?: string;

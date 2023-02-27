@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './titleOfContainer.css';
+import styles from './titleOfContainer.less';
 
 interface IContentProps {
   nameForTitleOfForm: string;

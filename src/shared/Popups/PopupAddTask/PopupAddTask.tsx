@@ -7,7 +7,7 @@ import { ErrorOfForm } from '../../Form/ErrorOfForm';
 import { Button } from '../../Button';
 
 import classNames from 'classnames/bind';
-import styles from './popupAddTask.css';
+import styles from './popupAddTask.less';
 const cx = classNames.bind(styles);
 
 interface ITaskProps {

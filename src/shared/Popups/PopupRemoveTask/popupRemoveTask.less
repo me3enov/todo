@@ -18,7 +18,6 @@
   text-overflow: ellipsis;
   border: none;
   background-color: var(--red);
-  outline: 2px solid var(--red);
   border-radius: 4px;
   font-style: normal;
   font-weight: 600;
@@ -32,30 +31,21 @@
   -webkit-tap-highlight-color: transparent;
   transition: 0.4s;
   padding: 0 16px;
-}
 
-.buttonRemove:hover,
-.buttonRemove:focus {
-  background-color: var(--black08);
-  outline: 2px solid var(--black08);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--black08);
+    outline: none;
+  }
 
-.buttonRemove:focus {
-  outline: 2px solid var(--outline);
-}
+  & :disabled {
+    background-color: var(--grayF1);
+    color: var(--grayB6);
+    cursor: not-allowed;
+  }
 
-.buttonRemove:active {
-  outline: 2px solid var(--black08);
-}
-
-.buttonRemove:disabled {
-  background-color: var(--grayF1);
-  outline: 2px solid var(--grayE8);
-  color: var(--grayB6);
-  cursor: not-allowed;
-}
-
-.buttonRemove[disabled]:hover,
-.buttonRemove[disabled]:focus {
-  background-color: var(--grayE8);
+  & [disabled]:hover,
+  [disabled]:focus {
+    background-color: var(--grayE8);
+  }
 }

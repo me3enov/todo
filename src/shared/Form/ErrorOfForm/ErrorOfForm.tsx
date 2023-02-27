@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './errorOfForm.css';
+import styles from './errorOfForm.less';
 
 type ErrorOfForm = {
   isDisabledButton: boolean;

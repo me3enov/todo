@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './containerAddTask.css';
+import styles from './containerAddTask.less';
 import { useState } from 'react';
 import { Button } from '../../../Button';
 import { PopupAddTask } from '../../../Popups/PopupAddTask/PopupAddTask';

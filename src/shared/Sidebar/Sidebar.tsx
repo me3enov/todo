@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './sidebar.css';
+import styles from './sidebar.less';
 import {ListOfRubrics} from "./ListOfRubrics";
 import {Button} from "../Button";
 

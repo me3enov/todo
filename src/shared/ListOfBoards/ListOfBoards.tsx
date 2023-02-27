@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './listOfBoards.css';
+import styles from './listOfBoards.less';
 import { Board } from './Board';
 
 interface IListOfBoardsProps {

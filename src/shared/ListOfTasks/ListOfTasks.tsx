@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './listOfTasks.css';
+import styles from './listOfTasks.less';
 import { Task } from './Task';
 
 type ListOfTasks = {
