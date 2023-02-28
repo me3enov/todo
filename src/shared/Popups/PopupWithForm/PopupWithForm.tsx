@@ -10,7 +10,7 @@ type PopupWithForm = {
   styleForForm: string;
   isOpenPopup: boolean;
   onClosePopup: () => void;
-  onSubmitForm: any; // и тут??
+  onSubmitForm: (event: React.FormEvent<HTMLFormElement>) => void
   children: React.ReactNode;
 };
 

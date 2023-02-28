@@ -1,6 +1,15 @@
 install:
 	npm ci
 
+run:
+	npm run dev
+
+build:
+	npm build-dev
+
+build:
+	npm build-prod
+
 test:
 	make install
 	npm run test
@@ -14,6 +23,3 @@ lint-fix:
 
 format:
 	npm run format
-
-run:
-	npm run dev

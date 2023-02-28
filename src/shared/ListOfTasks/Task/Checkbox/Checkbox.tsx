@@ -8,16 +8,16 @@ import { CheckboxSpan } from './CheckboxSpan';
 type Checkbox = {
   labelForCheckbox: string;
   isChecked: boolean;
-  onChangeCheckbox: () => void;
-  onKeyDownCheckbox: any; // ?? что за тип
+  onChange: () => void;
+  onKeyDown(event: React.KeyboardEvent<HTMLSpanElement>): void;
   onFocus: () => void;
 };
 
 export const Checkbox = ({
   labelForCheckbox,
   isChecked,
-  onChangeCheckbox,
-  onKeyDownCheckbox,
+  onChange,
+  onKeyDown,
   onFocus
 }: Checkbox) => {
   const classForSpan = cx({
@@ -30,13 +30,13 @@ export const Checkbox = ({
       <CheckboxInput
         className={styles.checkboxInput}
         checked={isChecked}
-        onChange={onChangeCheckbox}
+        onChange={onChange}
         tabIndex={-1}
         type={'checkbox'}
       />
       <CheckboxSpan
         className={classForSpan}
-        onKeyDown={onKeyDownCheckbox}
+        onKeyDown={onKeyDown}
         onFocus={onFocus}
         tabIndex={0}
       />

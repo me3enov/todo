@@ -29,7 +29,7 @@ export const Task = ({ task, tasks, onSetTasks }: Task) => {
     setIsOpenPopup(false);
   };
 
-  const handleChangeCheckbox = (): void => {
+  const handleChange = (): void => {
     setIsChecked(!isChecked);
   };
 
@@ -52,8 +52,8 @@ export const Task = ({ task, tasks, onSetTasks }: Task) => {
       <Checkbox
         labelForCheckbox={`Check ${task.text}`}
         isChecked={isChecked}
-        onChangeCheckbox={handleChangeCheckbox}
-        onKeyDownCheckbox={handleKeyDown}
+        onChange={handleChange}
+        onKeyDown={handleKeyDown}
         onFocus={() => setIsShown(true)}
       />
       <p className={styles.taskText}>{task.text}</p>

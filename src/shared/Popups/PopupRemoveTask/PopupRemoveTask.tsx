@@ -3,6 +3,7 @@ import styles from './popupRemoveTask.less';
 import { PopupWithForm } from '../PopupWithForm/PopupWithForm';
 import { Button } from '../../Button';
 import { TitleOfContainer } from '../../Form/TitleOfContainer';
+import { preventDefault } from '../../../utils/react/preventDefault';
 
 type Task = {
   id: string;
@@ -19,8 +20,7 @@ type PopupRemoveTask = {
 };
 
 export const PopupRemoveTask = ({ task, tasks, isOpenPopup, onClosePopup, onSetTasks }: PopupRemoveTask) => {
-  const handleSubmit = (event: any) => {
-    event.preventDefault();
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     onSetTasks(tasks.filter((itemOfTasks) => itemOfTasks.id !== task.id));
     onClosePopup();
   };
@@ -30,7 +30,7 @@ export const PopupRemoveTask = ({ task, tasks, isOpenPopup, onClosePopup, onSetT
       styleForForm={styles.form}
       isOpenPopup={isOpenPopup}
       onClosePopup={onClosePopup}
-      onSubmitForm={handleSubmit}
+      onSubmitForm={preventDefault(handleSubmit)}
     >
       <TitleOfContainer nameForTitleOfForm={task.text} />
       <Button className={styles.buttonRemove} type={'submit'} aria-label={'Remove Task'}>{'Remove Task'}</Button>
